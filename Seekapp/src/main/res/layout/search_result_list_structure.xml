@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/search_result_row_bottom_layout"
+            android:layout_marginRight="@dimen/search_result_margin_legt_right"
+            android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lockedRow"
+        android:orientation="vertical"
+        android:background="@drawable/unlocked_row_backgound"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spons_layout_height"
+                android:id="@+id/sponsLayout"
+                android:background="@drawable/search_result_spons_head_selector">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/spons_textlayout"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:id="@+id/sponsContainer"
+                        android:layout_gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sponsored By"
+                            android:id="@+id/txtSponsPreString"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/spons_text_size"
+                            android:layout_marginRight="@dimen/spons_pre_margin_right" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AirAsia"
+                            android:id="@+id/txtSponsorName"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/spons_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/sponsor_logo_height"
+                            android:id="@+id/imgSponsLogo"
+                            android:src="@mipmap/air_asia"
+                            android:contentDescription="@string/unlock_sponsor_company_logo" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/filter_lvl_edu_background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_result_curved_body">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_result_top_body_height"
+                    android:background="@color/super_light_gray">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imgLockedCountries"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/search_netherlands" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView8"
+                        android:background="#000000"
+                        android:alpha="0.25" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/search_result_institutions_container_margin_top"
+                        android:id="@+id/linearLayout3">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/test_text"
+                                    android:id="@+id/txtInstitutionTitle"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/institution_name_text_size"
+                                    android:layout_marginTop="@dimen/search_result_institutions_title_margin_top"
+                                    android:layout_centerHorizontal="true" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="@dimen/req_text_layout_width"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/search_result_req_i_margin_right"
+                                    android:layout_marginTop="@dimen/search_result_req_i_margin_top"
+                                    android:id="@+id/reqLayout">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/req_i_text"
+                                        android:id="@+id/txtSearchResultReq"
+                                        android:textColor="@android:color/white"
+                                        android:layout_gravity="center_vertical" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:background="@color/white_color"
+                                        android:id="@+id/reqUnderline"
+                                        android:layout_gravity="center_horizontal" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/international_ranked_text"
+                                android:id="@+id/txtInstitutionDescription"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/search_result_institutions_description_text_size"
+                                android:layout_marginBottom="@dimen/search_result_institutions_title_margin_bottom" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/test_text"
+                                android:id="@+id/txtInstitutionRankingNumber"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/search_result_institutions_title_text_size"
+                                android:layout_marginTop="@dimen/search_result_institutions_title_margin_bottom"
+                                android:layout_marginBottom="@dimen/search_result_institutions_description_margin_bottom" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout3"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/buttonLayout">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lock_unlocked_text"
+                            android:id="@+id/btnUnlockcourse"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/unlock_course_background"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/locked_unlock_course_text_size"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="@dimen/locked_unlock_course_button_left_right"
+                            android:layout_marginLeft="@dimen/locked_unlock_course_button_left_right" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/search_result_personal_interest_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/matchingLayout"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="@dimen/search_result_personal_interest_values_compare_width"
+                            android:layout_height="wrap_content">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/search_matching_text"
+                                android:id="@+id/txtMatchingTitle"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_title_text_size"
+                                android:layout_gravity="center_horizontal" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/matching_value"
+                                android:id="@+id/txtMatchingFigure"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_figure_text_size"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/search_result_personal_interest_figure_margin_bottom"
+                                android:layout_marginTop="@dimen/search_result_personal_interest_figure_margin_top" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/of_your_lifestyle"
+                                android:id="@+id/txtMatchingDescription"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_description_text_size"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="@dimen/search_result_personal_interest_values_compare_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recognition_text"
+                                android:id="@+id/txtRecognitionTitle"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_title_text_size"
+                                android:layout_gravity="center_horizontal" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recognition_value"
+                                android:id="@+id/txtRecognitionFigure"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_figure_text_size"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/search_result_personal_interest_figure_margin_bottom"
+                                android:layout_marginTop="@dimen/search_result_personal_interest_figure_margin_top" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/internationally_known"
+                                android:id="@+id/txtRecognitionDescription"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_description_text_size"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="@dimen/search_result_personal_interest_values_compare_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cost Saving"
+                                android:id="@+id/txtCostSavingTitle"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_title_text_size"
+                                android:layout_gravity="center_horizontal" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtCostSavingFigure"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_figure_text_size"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/search_result_personal_interest_figure_margin_bottom"
+                                android:layout_marginTop="@dimen/search_result_personal_interest_figure_margin_top"
+                                android:text="1500" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtCostSavingCurrency"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/search_result_personal_interest_description_text_size"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:text="usd" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unlock_course_match_container_height"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentBottom="false"
+                        android:gravity="bottom|center"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/course_details_container">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="@dimen/course_name_body_width"
+                            android:layout_height="@dimen/unlock_course_name_body_height"
+                            android:layout_gravity="left"
+                            android:id="@+id/unlock_course_name"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="false">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/course_title_course"
+                                    android:id="@+id/txtUnlockCourseTitleString"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="12.4sp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_below="@+id/txtuniName" />
+
+                                <RatingBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/unlockRatingBar"
+                                    android:layout_alignParentRight="false"
+                                    android:rating="4.0"
+                                    style="@style/RatingBar_unlock_style"
+                                    android:numStars="5"
+                                    android:layout_centerVertical="true"
+                                    android:stepSize="0.5"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_toRightOf="@+id/txtUnlockCourseTitleString" />
+                            </LinearLayout>
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/unlock_txt_value"
+                                android:id="@+id/txtCourseName"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="12.4sp"
+                                android:maxLines="2"
+                                android:lines="2"
+                                android:ellipsize="end" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="@dimen/unlocked_vnd_layout_width"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unlock_course_duration"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/unlock_course_duration_year"
+                                android:id="@+id/txtUnlockCourseDuration"
+                                android:textSize="11.25sp"
+                                android:textColor="@color/dark_gray"
+                                android:layout_gravity="right" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vnd_long_number"
+                                android:id="@+id/txtUnlockCourseCostPerYearValue"
+                                android:textSize="15.75sp"
+                                android:textColor="@color/dark_gray"
+                                android:layout_gravity="right" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="VND"
+                                    android:id="@+id/costCurrencyPerYear"
+                                    android:textSize="11.25sp"
+                                    android:textColor="@color/dark_gray" />
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cost_per_year_string"
+                                    android:id="@+id/txtUnlockCourseVNDPerYearString"
+                                    android:textSize="11.25sp"
+                                    android:textColor="@color/dark_gray"
+                                    android:layout_gravity="right" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:id="@+id/num_users_layout"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/search_result_background">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/number_users_unlocked_course"
+                            android:id="@+id/textView"
+                            android:layout_alignParentBottom="false"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/locked_bottom_users_unocked_text_size"
+                            android:layout_marginLeft="@dimen/bottom_text_margin_left"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

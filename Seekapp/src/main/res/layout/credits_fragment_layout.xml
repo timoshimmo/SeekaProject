@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="?attr/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="0dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@android:color/background_light">
+
+            <ImageButton
+                android:layout_width="@dimen/home_bar_button_width"
+                android:layout_height="@dimen/home_bar_settings_button_height"
+                android:id="@+id/imgHomeBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/home_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="@dimen/search_result_margin_legt_right" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Future Credits"
+                android:id="@+id/txtHomeTitle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/home_bar_top_text_size"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:layout_width="@dimen/home_bar_button_width"
+                android:layout_height="@dimen/home_bar_settings_button_height"
+                android:id="@+id/imgHomeMenu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/option_image"
+                android:scaleType="fitEnd"
+                android:layout_marginRight="@dimen/search_result_margin_legt_right" />
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/creditBodyScrollView"
+        android:layout_marginBottom="@dimen/credit_scrollview_bottom_margin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/credit_balance_body_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white_color"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/credits_layouts_top_margin"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/credit_balance_bottom_margin">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit_balance_text"
+                        android:id="@+id/textView17"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/credit_balance_currency_icon_width"
+                        android:layout_height="@dimen/credit_balance_currency_icon_height"
+                        android:id="@+id/imgBalanceCurrency"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/credits_symbol_icon"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitCenter" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit_balance_value"
+                        android:id="@+id/txtCreditsBalance"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="18sp"
+                        android:singleLine="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/credit_balance_bottom_margin"
+                    android:gravity="center">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit_top_quote_string"
+                        android:id="@+id/textView18"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/credit_top_quote_text_size"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/credit_body_left_right_margin"
+                android:paddingRight="@dimen/credit_body_left_right_margin"
+                android:paddingTop="15dp">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credit_promo_text_string"
+                    android:id="@+id/textView19"
+                    android:textColor="@color/pblue_color"
+                    android:textSize="@dimen/promo_code_text_size"
+                    android:paddingBottom="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spm_grades_value_back"
+                            android:layout_weight="0.7"
+                            android:layout_gravity="left"
+                            android:layout_marginRight="@dimen/promo_code_container_right_margin"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/txtPromoCode"
+                                android:textSize="@dimen/promotion_code_text_size"
+                                android:textColor="@color/mid_gray"
+                                android:layout_marginLeft="@dimen/promo_editText_margin_right_left"
+                                android:layout_marginRight="@dimen/promo_editText_margin_right_left"
+                                android:hint="@string/promo_text_palceholder"
+                                android:textColorHint="@color/super_light_gray"
+                                android:gravity="center_vertical"
+                                android:background="@color/white_color" />
+                        </LinearLayout>
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:text="@string/promo_button_text"
+                            android:id="@+id/btnPromoSubmit"
+                            android:background="@drawable/button_corners"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.3"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bottom_curve_select_click"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnFiveCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency1"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_five_credits"
+                            android:id="@+id/txtFiveCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_price"
+                            android:id="@+id/txtFivePrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency1"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountTen"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_ten"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/white_buttons_background"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnFifteenCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency2"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_fifteen_credits"
+                            android:id="@+id/txtFifteenCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_299_price"
+                            android:id="@+id/txtfifteenPrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency2"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountTwenty"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_twenty"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/white_buttons_background"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnThirtyFiveCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency3"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_thirtyfive_credits"
+                            android:id="@+id/txtYThirtyFiveCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_499_price"
+                            android:id="@+id/txtThirtyFivePrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency3"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountThirty"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_thirty"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/white_buttons_background"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnFiftyCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency4"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_fifty_credits"
+                            android:id="@+id/txtFiftyCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_799_price"
+                            android:id="@+id/txtFiftyPrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency4"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountFifty"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_fifty"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/white_buttons_background"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnHundredCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency5"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_hundred_credits"
+                            android:id="@+id/txthundredCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_1199_price"
+                            android:id="@+id/txtHundredPrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency5"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountSixty"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_sixty"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/white_buttons_background"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btnOneFiftyCredits">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imgFFCurrency6"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/fresh_futures_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_one_fifty_credits"
+                            android:id="@+id/txtOneFiftyCredits"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_2099_price"
+                            android:id="@+id/txtOneFiftyPrice"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/promotion_code_text_size"
+                            android:textIsSelectable="false"
+                            android:layout_gravity="center_horizontal" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_usd_currency"
+                            android:id="@+id/txtCurrency6"
+                            android:textColor="@color/super_light_gray"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgDiscountSeventy"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/discount_seventy"
+                            android:paddingRight="-5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

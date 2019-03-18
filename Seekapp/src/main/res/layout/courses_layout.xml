@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_data">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unlock_course_details_body"
+            android:background="@color/white_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/course_detail_body"
+                android:layout_below="@+id/courseTypeRate"
+                android:layout_marginTop="@dimen/course_name_body">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/course_name_body_width"
+                    android:layout_height="@dimen/unlock_course_name_body_height"
+                    android:layout_gravity="left"
+                    android:id="@+id/unlock_course_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/course_title_course"
+                            android:id="@+id/txtUnlockCourseTitleString"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="12.4sp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/txtuniName" />
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unlockRatingBar"
+                            android:layout_alignParentRight="false"
+                            android:rating="4.0"
+                            style="@style/RatingBar_unlock_style"
+                            android:numStars="5"
+                            android:layout_centerVertical="true"
+                            android:stepSize="0.5"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/txtUnlockCourseTitleString" />
+                    </LinearLayout>
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unlock_txt_value"
+                        android:id="@+id/textUnlockCourse"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="12.4sp"
+                        android:maxLines="2"
+                        android:lines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/unlocked_vnd_layout_width"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unlock_course_duration"
+                    android:layout_gravity="right"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unlock_course_duration_year"
+                        android:id="@+id/txtUnlockCourseDuration"
+                        android:textSize="11.25sp"
+                        android:textColor="@color/dark_gray"
+                        android:layout_gravity="right" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vnd_long_number"
+                        android:id="@+id/txtUnlockCourseVNDPerYearValue"
+                        android:textSize="15.75sp"
+                        android:textColor="@color/dark_gray"
+                        android:layout_gravity="right" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vnd_string"
+                        android:id="@+id/txtUnlockCourseVNDPerYearString"
+                        android:textSize="11.25sp"
+                        android:textColor="@color/dark_gray"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/course_type_rate_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/courseTypeRate">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Pennsylvania State University New Kensington"
+                    android:id="@+id/txtuniName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/dark_gray"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:layout_alignParentTop="true"
+                    android:textSize="15.75sp"
+                    android:ellipsize="end" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/sort_popup_background"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/settings_top_head_selector"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgSettingsClose"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/white_new_cancel_icon"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="10dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_string"
+                android:id="@+id/textView6"
+                android:textColor="@color/white_color"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.9"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="25dp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listSettings"
+            android:dividerHeight="@dimen/settings_listview_divider_height"
+            android:divider="@color/background_gray"
+            android:background="@color/white_color"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+</LinearLayout>

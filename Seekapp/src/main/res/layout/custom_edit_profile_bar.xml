@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_button_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/imgHomeBack"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/home_back"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/search_result_margin_legt_right" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:id="@+id/txtHomeTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/home_bar_top_text_size"
+            android:gravity="center_vertical" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/btnProfileEdit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/home_bar_top_text_size"
+            android:textColor="@color/pblue_color"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/search_result_margin_legt_right"
+            android:gravity="center_vertical|right" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnProfileEditCancel"
+            android:layout_marginRight="@dimen/search_result_margin_legt_right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/home_bar_top_text_size"
+            android:textColor="@color/pblue_color"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:gravity="center_vertical|right"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

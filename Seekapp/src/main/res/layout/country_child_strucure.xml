@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    android:paddingLeft="@dimen/child_start_end_margins"
+    android:paddingRight="@dimen/child_start_end_margins">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/child_row_height">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtCityChild"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/child_text_size" />
+
+        <CheckBox
+            android:layout_width="@dimen/checkbox_width_height"
+            android:layout_height="@dimen/checkbox_width_height"
+            android:id="@+id/checkCities"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/check_selector"
+            android:checked="false"
+            android:button="@android:color/transparent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_color"
+        android:id="@+id/actionBar_underline" />
+
+</LinearLayout>

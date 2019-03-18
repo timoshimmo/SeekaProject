@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_result_curved_body"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/filter_lvl_edu_background"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_popup_title_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/settings_popup_margin_left">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:id="@+id/textView46"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/settings_title_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:id="@+id/datepicker_item_body"
+                    android:gravity="center">
+
+                    <DatePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/datePicker"
+                        android:datePickerMode="spinner"
+                        android:calendarViewShown="false"
+                        android:headerBackground="@color/pblue_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_layout_height"
+                    android:layout_alignParentBottom="false"
+                    android:gravity="center_vertical|right"
+                    android:layout_below="@+id/datepicker_item_body"
+                    android:paddingRight="@dimen/settings_popup_margin_left">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                        android:layout_width="@dimen/settings_button_width"
+                        android:layout_height="@dimen/settings_popup_button_height"
+                        android:text="@string/string_cancel"
+                        android:id="@+id/btnCancelDate"
+                        android:background="@drawable/profile_popup_button_background"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/settings_popup_text_size"
+                        android:textAllCaps="false" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                        android:layout_width="@dimen/settings_button_width"
+                        android:layout_height="@dimen/settings_popup_button_height"
+                        android:text="@string/set_string"
+                        android:id="@+id/btnSetDate"
+                        android:background="@drawable/profile_popup_button_background"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/settings_popup_text_size"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

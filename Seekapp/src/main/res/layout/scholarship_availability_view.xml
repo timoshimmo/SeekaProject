@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/scholarshipAvailabilityContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scholarshipAvaBody"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scholarship_availability_title"
+            android:id="@+id/txtScholarshipTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/scholarsip_ava_string"
+                android:id="@+id/txtScholarshipText"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/uni_info_details_text_size"
+                android:layout_weight="0.85"
+                android:textColor="@color/dark_gray"
+                android:ellipsize="end"
+                android:minLines="5"
+                android:lines="5" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/scholarship_ava_right_arrow_height"
+                android:id="@+id/imgSchAvailability"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/right_arrow"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

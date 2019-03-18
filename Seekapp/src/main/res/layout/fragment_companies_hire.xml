@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.CompaniesHireFragment"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/background_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageHireEmployer"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/comp_hire_employer_icon" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employer_string"
+                android:id="@+id/textView52"
+                android:textColor="@color/pblue_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/super_light_gray"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageHireSector"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/comp_hire_sector_icon" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sector_string"
+                android:id="@+id/textView53"
+                android:textColor="@color/pblue_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle"
+            android:divider="@color/background_gray"
+            android:id="@+id/compHireTable"></TableLayout>
+    </ScrollView>
+</LinearLayout>

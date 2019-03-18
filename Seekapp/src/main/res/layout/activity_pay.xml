@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_gray">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Credits"
+                android:id="@+id/textView51"
+                android:textColor="@color/mid_gray"
+                android:textSize="20sp"
+                android:layout_marginBottom="50dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are about to purchase"
+                android:id="@+id/textView50"
+                android:textColor="@color/mid_gray"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/credits_symbol_icon"/>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/txtCreditPriceValue"
+                    android:textSize="30sp"
+                    android:textColor="@color/pblue_color" />
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for "
+                android:id="@+id/textView55"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/mid_gray"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"
+                    android:id="@+id/textView56"
+                    android:textSize="22sp"
+                    android:textColor="@color/mid_gray"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.99"
+                    android:id="@+id/txtCostValue"
+                    android:textSize="23sp"
+                    android:textColor="@color/mid_gray" />
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_corners" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

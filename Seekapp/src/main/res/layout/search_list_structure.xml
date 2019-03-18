@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/searchBody"
+        android:backgroundTintMode="multiply"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/course_search_row_height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_search_courses"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:background="#000000"
+            android:alpha="0.20"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="@dimen/course_search_icon_width"
+            android:layout_height="@dimen/course_search_icon_height"
+            android:id="@+id/imgSearchCityMonuments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/course_search_icon_margin_top"
+            android:layout_marginBottom="@dimen/search_result_margin_legt_right" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/course_search_icon_width"
+            android:layout_below="@+id/imgSearchCityMonuments"
+            android:id="@+id/countryNameLayout"
+            android:layout_marginBottom="@dimen/course_search_ctry_name_body_margin_bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="@dimen/course_search_ctry_name_width"
+                android:text="Medium Text"
+                android:id="@+id/txtSearchCountry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/search_ctry_name_text_size"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:layout_width="@dimen/course_search_size"
+                android:layout_height="@dimen/course_search_size"
+                android:id="@+id/btnSearchInfo"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="false"
+                android:src="@mipmap/search_info_icon"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="@dimen/course_search_info_margin_right"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/course_search_icon_width"
+            android:layout_height="@dimen/course_search_ctry_info_body_height"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/countryNameLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/course_search_icon_margin_top">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/txtNumCoursesAvailable"
+                android:textColor="@color/white"
+                android:textSize="@dimen/search_course_available_text_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

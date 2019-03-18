@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/filterBarBody">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_title_divider_height"
+        android:background="#696969"
+        android:id="@+id/actionBar_underline"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/search_result_margin_legt_right"
+        android:paddingRight="@dimen/search_result_margin_legt_right">
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_settings_button_height"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/imgFilterCancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/new_cancel_icon"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="900 Results"
+            android:id="@+id/txtFilterTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/home_bar_top_text_size" />
+
+        <ImageButton
+            android:layout_width="@dimen/filter_confirm_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/imgFilterAccept"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/accept_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

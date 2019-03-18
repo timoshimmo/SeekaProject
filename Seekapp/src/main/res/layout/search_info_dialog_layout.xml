@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_result_curved_body"
+            android:background="@drawable/filter_lvl_edu_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_popup_title_height"
+                android:id="@+id/sponsLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/spons_textlayout"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/settings_popup_margin_left">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eligibility Info"
+                        android:id="@+id/txtSpons"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/settings_title_text_size"
+                        android:layout_marginRight="@dimen/spons_pre_margin_right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_layout_height"
+                    android:layout_alignParentBottom="false"
+                    android:gravity="center_vertical|right"
+                    android:layout_below="@+id/txtSearchInfoMessage">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                        android:layout_width="@dimen/settings_popup_button_width"
+                        android:layout_height="@dimen/settings_radio_row_height"
+                        android:text="Ok"
+                        android:id="@+id/btnOkInfo"
+                        android:background="@drawable/profile_popup_button_background"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/settings_popup_button_text_size"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtSearchInfoMessage"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/settings_popup_margin_left"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

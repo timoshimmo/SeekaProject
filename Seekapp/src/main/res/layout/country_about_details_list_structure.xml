@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profile_data_row_height"
+    android:background="@color/white_color"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_data_row_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/ctry_icon_container"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.12">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgCtryOptionIcon"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ctry_visa_icon"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:id="@+id/infoRow"
+            android:background="@android:color/white"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/country_options_value"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="options"
+                        android:id="@+id/txtAboutCountryOptions"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/ctry_info_options_text_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/indicatorBody"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                        android:id="@+id/imgCtryIndicator"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/filter_down_arrow"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/country_list_indicator_desc"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background_gray"
+                    android:id="@+id/hori_divider"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

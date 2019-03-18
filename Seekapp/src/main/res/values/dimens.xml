@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_list_horizontal_margin">10dp</dimen>
+    <dimen name="menu_figures_large_margin_right">18.5dp</dimen>
+    <dimen name="menu_figures_small_margin_right">34dp</dimen>
+    <dimen name="figures_text_size">11.6sp</dimen>
+    <dimen name="figures_text_padding_left_right">20dp</dimen>
+    <dimen name="figures_text_padding_top_down">3dp</dimen>
+    <dimen name="figures_text_padding_left_right_two">22dp</dimen>
+    <dimen name="search_row_height">300dp</dimen>
+    <dimen name="filter_left_top_margin">10dp</dimen>
+    <dimen name="course_text_size">13sp</dimen>
+
+
+
+    <!-- Welcome Dimensions -->
+
+    <dimen name="course_data_layout_top_margin">10dp</dimen>
+
+    <dimen name="world_ranking_text_size">21sp</dimen>
+    <dimen name="unlock_image_top_margin">3dp</dimen>
+    <dimen name="course_info_section_title_text_size">19sp</dimen>
+
+
+
+</resources>

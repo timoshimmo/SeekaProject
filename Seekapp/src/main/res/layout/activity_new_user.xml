@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.NewUserActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:id="@+id/imageBody">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgNewUserBack"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/welcome_image"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:alpha="0.15"></FrameLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user_welcome_string"
+                android:id="@+id/txtWelcomeText"
+                android:layout_marginLeft="@dimen/new_user_pading_left_right"
+                android:layout_marginTop="@dimen/new_user_welcome_text_top"
+                android:textSize="@dimen/new_user_welcome_text_size"
+                android:textColor="@android:color/white" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User."
+                android:id="@+id/txtWelcomeUserText"
+                android:layout_marginLeft="@dimen/new_user_pading_left_right"
+                android:textSize="@dimen/new_user_welcome_text_size"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/txtWelcomeText" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/new_user_pading_left_right"
+            android:paddingRight="@dimen/new_user_pading_left_right"
+            android:id="@+id/contentBody">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user_title_string"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/new_user_text_size"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewUserSearch"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/welcome_search_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/new_user_pading_left_right"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/btnWelcomeUserClose"
+        android:background="@color/transparent"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter" />
+</RelativeLayout>

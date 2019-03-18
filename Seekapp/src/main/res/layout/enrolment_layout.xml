@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unlock_enrollment_container"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="Enrolment"
+            android:id="@+id/btnEnrolment"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/full_enrolement_locked"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:gravity="center" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="Scholarship"
+            android:id="@+id/btnScholarship"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/scholarship_locked"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

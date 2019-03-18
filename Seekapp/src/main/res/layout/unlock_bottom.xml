@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/unlock_top">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:background="@drawable/unlocked_row_backgound"
+        android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+        android:layout_marginRight="@dimen/search_result_margin_legt_right"
+        android:layout_marginBottom="@dimen/search_result_row_bottom_layout"
+        android:id="@+id/unlockBody"
+        android:paddingBottom="@dimen/unlock_body_bottom_curve_padding"
+        android:layout_marginTop="@dimen/search_result_top_margin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unsponsInnerBody"
+            android:background="@drawable/unlock_inner_row_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unlocked_image_container_height"
+                android:id="@+id/unlockBackground"
+                android:background="@drawable/unlocked_unsposored_top_curve">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_unlock_course"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unlock_uni_name_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/uniContainer">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView6"
+                        android:background="#000000"
+                        android:alpha="0.7" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/world_rank_string"
+                        android:id="@+id/txtWorldRankString"
+                        android:textSize="17.5sp"
+                        android:textColor="@color/white_color"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7.5dp" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/world_rank_value"
+                        android:id="@+id/txtWorldRankValueTop"
+                        android:textColor="@color/white_color"
+                        android:textSize="17.5sp"
+                        android:layout_toEndOf="@+id/txtWorldRankString"
+                        android:layout_toRightOf="@+id/txtWorldRankString"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/unlock_share_icon_container_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/share_phone_layout"
+                    android:layout_marginTop="@dimen/share_phone_layout_top_right"
+                    android:layout_marginRight="@dimen/share_phone_layout_top_right">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageUnlockPhone"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/phone_call_logo"
+                        android:layout_alignParentLeft="true"
+                        android:scaleType="fitCenter" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageUnlockShare"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/share_logo"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/share_phone_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/unlock_share_container"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView4"
+                        android:background="@drawable/rounded_corners_share_contianer"
+                        android:alpha="0.5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgShareEmail"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/home_fb_share" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgShareCall"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/home_tw_share" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgShareLocation"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/home_gp_share" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgShareSeekaContact"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/home_in_share" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/unlock_lower_height"
+                android:id="@+id/unlockInfoContainer"
+                android:background="@drawable/unlock_lower_background">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/unlockInfoBody"
+                    android:layout_marginLeft="@dimen/unlock_uni_details_margin_left_right"
+                    android:layout_marginRight="@dimen/unlock_uni_details_margin_left_right">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewPagerBody">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </edu.freshfutures.seeka.CustomWidgets.CustomViewPager>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/unlocked_uni_logo_height_width"
+            android:layout_height="@dimen/unlocked_uni_logo_height_width"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="@dimen/uni_logo_margin_right"
+            android:id="@+id/uniLogo"
+            android:layout_marginTop="@dimen/uni_logo_top_margin"
+            android:background="@drawable/uni_logo_oval_back"
+            android:paddingBottom="0.33dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageUniLogo"
+                android:background="@drawable/oval_widgets"
+                android:contentDescription="@string/unlock_university_logo_desc" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgBackShadow"
+            android:src="@mipmap/correct"
+            android:background="@drawable/unlock_shade_background"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.ProfileActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@color/white_color"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_top_tab_layout_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProfileInfo"
+                android:src="@mipmap/profile_info_image_clicked"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_info_string"
+                android:id="@+id/txtProfileInfo"
+                android:textColor="@color/pblue_color"
+                android:textSize="@dimen/profile_tab_bar_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnProfileEdu"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/profile_edu_image"
+                android:scaleType="centerCrop" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_edu_page_string"
+                android:id="@+id/txtProfileEdu"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/profile_tab_bar_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnProfileInterests"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/profile_interests_image"
+                android:scaleType="centerCrop" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_page_interets_string"
+                android:id="@+id/txtProfileInterests"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/profile_tab_bar_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomViewPager
+        android:id="@+id/profileviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

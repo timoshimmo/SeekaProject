@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="edu.freshfutures.seeka.JobDetailsFragment"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/course_info_section_container_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tot_ava_jobs_title"
+            android:id="@+id/textView32"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="@dimen/course_info_section_container_padding" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuala Lumpur - 43,000"
+            android:id="@+id/textView36"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@color/mid_gray"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/job_details_type_padding_left_right"
+            android:paddingRight="@dimen/job_details_type_padding_left_right"
+            android:layout_marginBottom="@dimen/job_category_btn_bottom_margin"
+            android:id="@+id/jobDetailsBody">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_category_button_height"
+                android:baselineAligned="false"
+                android:background="@drawable/white_buttons_background"
+                android:layout_marginBottom="@dimen/job_category_btn_bottom_margin"
+                android:id="@+id/btnShortSkilled">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/short_skilled_jobs_string"
+                        android:id="@+id/txtShortSkilled"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/course_info_section_title_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_course_details_size"
+                        android:layout_height="@dimen/right_arrow_course_details_size"
+                        android:id="@+id/imgJobDetailsNext"
+                        android:contentDescription="Arrow Next Page"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/right_arrow"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/job_category_button_height"
+            android:baselineAligned="false"
+            android:background="@drawable/white_buttons_background"
+            android:layout_marginBottom="@dimen/job_category_btn_bottom_margin"
+                android:id="@+id/btnCompHiring">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comp_hiring_graduates_string"
+                    android:id="@+id/txtCompHiringGrad"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/course_info_section_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/right_arrow_course_details_size"
+                    android:layout_height="@dimen/right_arrow_course_details_size"
+                    android:id="@+id/imgJobDetailsNext"
+                    android:contentDescription="Arrow Next Page"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/right_arrow"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_category_button_height"
+                android:baselineAligned="false"
+                android:background="@drawable/white_buttons_background"
+                android:layout_marginBottom="@dimen/job_category_btn_bottom_margin"
+                android:id="@+id/btnInternship">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/internship_string"
+                        android:id="@+id/txtInternship"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/course_info_section_title_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_course_details_size"
+                        android:layout_height="@dimen/right_arrow_course_details_size"
+                        android:id="@+id/imgJobDetailsNext"
+                        android:contentDescription="Arrow Next Page"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/right_arrow"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_category_button_height"
+                android:baselineAligned="false"
+                android:background="@drawable/white_buttons_background"
+                android:layout_marginBottom="@dimen/job_category_btn_bottom_margin"
+                android:id="@+id/btnPopularSites">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pop_job_web_string"
+                        android:id="@+id/txtPopJobWeb"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/course_info_section_title_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_course_details_size"
+                        android:layout_height="@dimen/right_arrow_course_details_size"
+                        android:id="@+id/imgJobDetailsNext"
+                        android:contentDescription="Arrow Next Page"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/right_arrow"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white_color"
+        android:padding="@dimen/course_info_section_container_padding">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/job_details_type_padding_left_right"
+            android:paddingRight="@dimen/job_details_type_padding_left_right">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_qua_req_string"
+                android:id="@+id/textView49"
+                android:textColor="@color/mid_gray"
+                android:layout_marginBottom="@dimen/need_qua_req_text_bottom_margin"
+                android:textSize="15sp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_category_button_height"
+                android:text="@string/btn_qua_recog_text"
+                android:id="@+id/button"
+                android:background="@color/pblue_color"
+                android:textColor="@color/white_color"
+                android:textAllCaps="false"
+                android:singleLine="false"
+                android:textSize="@dimen/course_info_section_title_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

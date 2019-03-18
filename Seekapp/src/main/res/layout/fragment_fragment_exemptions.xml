@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.FragmentDetailedGradeRequirements"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="57dp"
+        android:background="@android:color/background_light">
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_button_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/btnBack"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/home_back"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/search_result_margin_legt_right" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Exemptions"
+            android:id="@+id/txtHomeTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/home_bar_top_text_size"
+            android:gravity="center_vertical" />
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_button_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/btnSettings"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/option_image"
+            android:scaleType="fitEnd"
+            android:layout_marginRight="@dimen/search_result_margin_legt_right" />
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_button_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/btnDialogBack"
+            android:src="@mipmap/home_back"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/search_result_margin_legt_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_title_divider_height"
+        android:background="@color/mid_gray"
+        android:id="@+id/view" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Exemptions More Info Data"
+            android:textSize="17sp"
+            android:textColor="@color/mid_gray" />
+    </LinearLayout>
+
+</LinearLayout>

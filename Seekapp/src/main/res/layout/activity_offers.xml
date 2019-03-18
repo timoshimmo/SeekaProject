@@ -1,0 +1,267 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.OffersActivity"
+    android:background="@color/background_gray">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestPacksScrollview" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:id="@+id/txtCourseTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:layout_below="@+id/findUni" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="false"
+                android:id="@+id/groupOffers"
+                android:layout_below="@+id/txtCourseTitle">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="2dp"
+                    android:id="@+id/requestContainer">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/curved_row_white_back"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request for an advisor"
+                            android:id="@+id/textView63"
+                            android:textSize="16sp"
+                            android:textColor="@color/pblue_color"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seeka is located all over the world with trained Education Advisors to answer all your questions about the University, Course, City, Accreditation and more"
+                            android:id="@+id/rdRequestAdvisor"
+                            android:button="@null"
+                            android:drawableRight="@drawable/check_selector"
+                            android:textColor="@color/mid_gray"
+                            android:drawablePadding="15dp"
+                            android:layout_marginBottom="15dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.6dp"
+                            android:background="@color/background_gray"
+                            android:id="@+id/view1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/findUni" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact University"
+                            android:id="@+id/textView651"
+                            android:textSize="16sp"
+                            android:textColor="@color/pblue_color"
+                            android:layout_marginTop="15dp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seeka will get you connected to the administration of the institution you wish to contact. The institution will contact you directly once they confirm the request."
+                            android:id="@+id/rdContactUni"
+                            android:button="@null"
+                            android:drawableRight="@drawable/check_selector"
+                            android:textColor="@color/mid_gray"
+                            android:drawablePadding="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enrolment Packs"
+                    android:id="@+id/txtPacksTitle"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/findUni" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="2dp"
+                    android:id="@+id/packsContainer">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/curved_row_white_back"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Full Enrolment Pack"
+                            android:id="@+id/fullEnrilmentTitle"
+                            android:textSize="16sp"
+                            android:textColor="@color/pblue_color"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seeka will enroll you into the university and make sure of all immigration, housing and transport. You receive an exclusive customer service completely dedicated to your case"
+                            android:id="@+id/rdFullPack"
+                            android:button="@null"
+                            android:drawableRight="@drawable/check_selector"
+                            android:textColor="@color/mid_gray"
+                            android:drawablePadding="15dp"
+                            android:layout_marginBottom="15dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.6dp"
+                            android:background="@color/background_gray"
+                            android:id="@+id/view2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/findUni" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Self Enrolment Pack"
+                            android:id="@+id/textView65"
+                            android:textSize="16sp"
+                            android:textColor="@color/pblue_color"
+                            android:layout_marginTop="15dp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seeka will provide detailed steps and required documants that you need to enrol yourself. This option will save you money and allow you to manage your enrolment"
+                            android:id="@+id/rdSelfPack"
+                            android:button="@null"
+                            android:drawableRight="@drawable/check_selector"
+                            android:textColor="@color/mid_gray"
+                            android:drawablePadding="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/findUni"
+                android:layout_alignParentTop="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/white"
+                    android:paddingRight="10dp">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find more courses from this university"
+                        android:id="@+id/textView15"
+                        android:textColor="@color/pblue_color"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerInParent="true"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/seeka_blue_right_arrow"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_divider_height"
+                android:background="@color/super_light_gray"
+                android:id="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/findUni" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="@dimen/profile_update_button_width"
+                android:layout_height="@dimen/course_info_btns_height"
+                android:text="Next"
+                android:id="@+id/btnNext"
+                android:background="@drawable/button_corners"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/groupOffers"
+                android:textAllCaps="false"
+                android:textSize="@dimen/unlock_course_button_text_size" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/filterBarBody">
+
+    <ImageButton
+        android:layout_width="@dimen/filter_confirm_width"
+        android:layout_height="@dimen/welcome_backbutton_height"
+        android:id="@+id/imgTermsCancel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/new_cancel_icon"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_bar_title"
+        android:id="@+id/txtTermsTitle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/mid_gray"
+        android:textSize="@dimen/home_bar_top_text_size" />
+
+    <ImageButton
+        android:layout_width="@dimen/filter_confirm_width"
+        android:layout_height="@dimen/welcome_backbutton_height"
+        android:id="@+id/imgTermsMenu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/option_image"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="@dimen/filter_confirm_margin_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_title_divider_height"
+        android:background="#696969"
+        android:id="@+id/actionBar_underline"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:id="@+id/purchase_type_column"
+            android:paddingTop="15dp"
+            android:background="@drawable/purchase_left_most_column"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="15dp"
+            android:gravity="center">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:id="@+id/txtReportArea"
+                android:textColor="@color/mid_gray"
+                android:textSize="15sp"
+                android:layout_gravity="top|center_horizontal"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_divider_height"
+                android:background="@color/mid_gray"
+                android:id="@+id/title_horizontal_divider"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Case Id:"
+                android:id="@+id/txtCaseIDString"
+                android:textColor="@color/mid_gray"
+                android:textSize="15sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2245 22458 "
+                android:id="@+id/txtCaseIDCode"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/mid_gray"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/purchase_details_column"
+            android:background="@drawable/purchase_middle_column"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Royal Roads University"
+                android:id="@+id/txtUniName"
+                android:textColor="@color/mid_gray"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:lines="2"
+                android:layout_marginBottom="@dimen/purchase_details_uni_name_bottom_margin" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronic And Electrical Engineering Electonic and Elctrical"
+                android:id="@+id/txtCourse"
+                android:textColor="@color/light_gray"
+                android:textSize="15sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:id="@+id/purchase_price_column"
+            android:gravity="center"
+            android:background="@drawable/purchase_right_most_column"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Credits"
+                android:id="@+id/txtPrice"
+                android:textColor="@color/mid_gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+</TableRow>

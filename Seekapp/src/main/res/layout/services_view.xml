@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/serviesContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/servicesBody"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_info_services"
+            android:id="@+id/textServicesTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/services_icon_height"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices1"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/disability_support_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices2"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/swimming_pool_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices3"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/language_literature_artboard" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices4"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/medical_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices5"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/train_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices6"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/accommodation_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices7"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/information_technology_services" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgServices8"
+                android:layout_weight="0.13"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/travelling_services_icon" />
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/see_all_servies_string"
+            android:id="@+id/btnSeeAllServices"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

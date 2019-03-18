@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/home_container_margin"
+    android:id="@+id/unlock_top"
+    android:paddingLeft="@dimen/search_result_margin_legt_right"
+    android:paddingRight="@dimen/search_result_margin_legt_right">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:background="@drawable/unlocked_row_backgound"
+        android:layout_marginBottom="@dimen/search_result_row_bottom_layout"
+        android:id="@+id/homeContainer"
+        android:paddingBottom="@dimen/unlock_body_bottom_curve_padding"
+        android:layout_marginTop="@dimen/search_result_top_margin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/homeBody"
+            android:background="@drawable/unlock_inner_row_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtArticleTitle"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textColor="@color/pblue_color"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_row_top_body_height"
+                android:id="@+id/unlockBackground">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgHomeArticle"
+                    android:scaleType="fitXY"
+                    android:background="@color/background_gray" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="178dp"
+                android:id="@+id/unlockInfoContainer"
+                android:background="@drawable/unlock_lower_background">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unlockInfoBody"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Topic"
+                        android:id="@+id/txtHomeTopic"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="16sp"
+                        android:lines="1"
+                        android:ellipsize="end" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="details"
+                            android:id="@+id/txtHomeDetails"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="14sp"
+                            android:textColor="@color/mid_gray"
+                            android:lines="3"
+                            android:ellipsize="end" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Read More"
+                            android:id="@+id/txtReadMore"
+                            android:layout_alignParentBottom="false"
+                            android:textSize="15sp"
+                            android:textColor="@color/pblue_color"
+                            android:layout_below="@+id/txtHomeDetails"
+                            android:textIsSelectable="false"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginTop="5dp">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Likes"
+                            android:id="@+id/txtArticleLikesValue"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/super_light_gray" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonBody"
+                    android:background="@drawable/unlock_lower_background">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/likeBody"
+                        android:layout_weight="0.45"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
+                            android:id="@+id/imgLikeArticle"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/like_article"
+                            android:layout_marginRight="7dp" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Like"
+                            android:id="@+id/txtLikeStatus"
+                            android:textSize="15sp"
+                            android:textColor="@color/mid_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.7dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/super_light_gray" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/shareBody"
+                        android:layout_weight="0.45"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView10"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/share_article_icon"
+                            android:layout_marginRight="7dp" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:id="@+id/txtShare"
+                            android:textSize="15sp"
+                            android:textColor="@color/mid_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="345dp"
+            android:id="@+id/shade"
+            android:background="@drawable/unlock_shade_background"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

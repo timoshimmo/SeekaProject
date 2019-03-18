@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@mipmap/profile_pic"/>
+    <item android:drawable="@drawable/oval_back"/>
+    <item android:drawable="@drawable/cover_edges"/>
+
+</layer-list>

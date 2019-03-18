@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="?attr/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="0dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@android:color/background_light">
+
+            <ImageButton
+                android:layout_width="@dimen/home_bar_button_width"
+                android:layout_height="@dimen/home_bar_settings_button_height"
+                android:id="@+id/imgHomeBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/home_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="@dimen/search_result_margin_legt_right" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Purchase History"
+                android:id="@+id/txtHomeTitle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/home_bar_top_text_size"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:layout_width="@dimen/home_bar_button_width"
+                android:layout_height="@dimen/home_bar_settings_button_height"
+                android:id="@+id/imgHomeMenu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/option_image"
+                android:scaleType="fitEnd"
+                android:layout_marginRight="@dimen/search_result_margin_legt_right" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/pblue_color"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/dark_gray"
+        app:tabSelectedTextColor="@color/pblue_color">
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_title_divider_height"
+        android:background="@color/mid_gray"
+        android:id="@+id/title_horizontal_divider" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/purchase_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+ <!--   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/purchaseHistoryscrollView" >
+
+         </ScrollView>
+         -->
+
+
+
+</LinearLayout>

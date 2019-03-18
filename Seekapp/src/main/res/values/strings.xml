@@ -1,0 +1,984 @@
+<resources>
+    <string name="app_name">Seeka</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="launch_logo_desc">Launch Logo</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="launch_top_slogan">Over 5 Million Satisfied</string>
+    <string name="launch_bottom_slogan">International Students</string>
+    <string name="title_activity_start">Get Started</string>
+    <string name="get_started_button_text">Get Started</string>
+    <string name="title_activity_login">Login</string>
+    <string name="policy_aggreement">By signing up you agree to Fresh Futures User</string>
+    <string name="agreement_portion_text">Agreement Private Policy and Cookie Policy</string>
+    <string name="btnGetStarted_text">Get Started</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="list_settings_title">MenuActivity</string>
+    <string name="title_activity_menus">Menu</string>
+    <string name="menu_images_res">Menu Images</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bootom_menu_home_button">Bottom menu tab home button</string>
+    <string name="seeka_launch_logo_desc">Seeka Launch Logo</string>
+    <string name="launch_search_icon">Launch Search Icon</string>
+    <string name="launch_top_intro_text1">courses in seconds</string>
+    <string name="launch_bottom_intro1">Search and compare over 1 000 000</string>
+    <string name="launch_top_intro_text2">Narrow down your choices by using our</string>
+    <string name="launch_bottom_intro2">filter for the most accurate searches.</string>
+    <string name="launch_top_intro_text3">Did you know 40% of students aren\'t</string>
+    <string name="launch_bottom_intro3">happy in the city they are studying? Use</string>
+    <string name="launch_interests_bottom_intro3">Seeka to match your lifestyle needs.</string>
+    <string name="launch_top_intro_text4">Flick through millions of Country, City and</string>
+    <string name="launch_bottom_intro4">University images to feel your way through</string>
+    <string name="launch_interests_bottom_intro4">your options.</string>
+    <string name="hint_email_text">Email</string>
+    <string name="hint_password_text">Password</string>
+    <string name="email_textbox_image">Image for textbox</string>
+    <string name="password_textbox_image">Image for password textbox</string>
+    <string name="button_login_text">Log in</string>
+    <string name="not_member_text">Not a member?</string>
+    <string name="create_account_text">Create account</string>
+    <string name="facebook_text">Use Facebook</string>
+    <string name="image_back_button_desc">Image for back button</string>
+    <string name="title_activity_set_up">Set Up</string>
+    <string name="hint_name">Username</string>
+    <string name="user_agreement1">By Signing up, you agree to Fresh Futures\' User</string>
+    <string name="user_agreement2" />
+    <string name="user_agreement_policy2">Agreement, Private Policy and Cookie Policy</string>
+    <string name="image_CA">Image Button CA</string>
+    <string name="shadow_back">Shadow Background Button</string>
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_incorrect_username">This username is incorrect</string>
+    <string name="error_invalid_email">This username is too short</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="title_activity_home">Home</string>
+    <string name="error_invalid_name">Name should only contain alphabets</string>
+
+    <!-- Search String Values -->
+    <string name="text_number_of_courses_available">Courses Available</string>
+    <string name="text_courses_accepted">Courses Accepted You</string>
+    <string name="search_box_question">Where would you like to study?</string>
+    <string name="search_filter_text"> <![CDATA[Filter by Cost & Duration]]></string>
+    <string name="req_i_text">Req.</string>
+    <string name="course_title_course">Postgraduate Course:</string>
+    <string name="search_matching_text">Matching</string>
+    <string name="of_your_lifestyle">of your lifestyle</string>
+    <string name="recognition_text">Recognition</string>
+    <string name="internationally_known">Internationally Known</string>
+    <string name="employability_text">Employability</string>
+    <string name="above_average">Above Average</string>
+    <string name="req_i_image_desc">Req i Image</string>
+    <string name="test_text">Medium Text</string>
+    <string name="international_ranked_text">Internationally ranked in top</string>
+    <string name="duration_text">3 years</string>
+    <string name="vnd_text">/Year</string>
+    <string name="vnd_figure_text">11 323</string>
+    <string name="matching_value">70%</string>
+    <string name="recognition_value">9.4</string>
+    <string name="employability_value">6.8</string>
+    <string name="locked_course_identifier_image">Locked course identifier</string>
+    <string name="home_scholarship_title">Scholarship</string>
+    <string name="search_preference_value">pref_search_status</string>
+    <string name="search_preference_view_position">pref_search_view_position</string>
+    <string name="serachBox_hint">Type here</string>
+
+    <string name="country_australia">Australia</string>
+    <string name="country_austria">Austria</string>
+    <string name="country_brazil">Brazil</string>
+    <string name="country_canada">Canada</string>
+    <string name="country_china">China</string>
+    <string name="country_czech">Czech Republic</string>
+
+    <string name="country_denmark">Denmark</string>
+    <string name="country_finland">Finland</string>
+    <string name="country_france">France</string>
+    <string name="country_germany">Germany</string>
+    <string name="country_iceland">Iceland</string>
+    <string name="country_india">India</string>
+    <string name="country_ireland">Ireland</string>
+
+    <string name="country_italy">Italy</string>
+    <string name="country_japan">Japan</string>
+    <string name="country_malaysia">Malaysia</string>
+    <string name="country_mexico">Mexico</string>
+    <string name="country_netherlands">Netherlands</string>
+    <string name="country_new_zealand">New Zealand</string>
+
+    <string name="country_poland">Poland</string>
+    <string name="country_russia">Russia</string>
+    <string name="country_singapore">Singapore</string>
+    <string name="country_slovenia">Slovenia</string>
+    <string name="country_south_africa">South Africa</string>
+    <string name="country_spain">Spain</string>
+
+    <string name="country_sweden">Sweden</string>
+    <string name="country_switzerland">Switzerland</string>
+    <string name="country_u_a_e">U.A.E</string>
+    <string name="country_u_s_a">U.S.A</string>
+    <string name="country_uk">United Kingdom</string>
+
+    <string name="ctry_code_australia">AU</string>
+    <string name="ctry_code_austria">AT</string>
+    <string name="ctry_code_brazil">BR</string>
+    <string name="ctry_code_canada">CA</string>
+    <string name="ctry_code_china">CN</string>
+    <string name="ctry_code_czech">CZ</string>
+
+    <string name="ctry_code_denmark">DK</string>
+    <string name="ctry_code_finland">FI</string>
+    <string name="ctry_code_france">FR</string>
+    <string name="ctry_code_germany">DE</string>
+    <string name="ctry_code_iceland">IS</string>
+    <string name="ctry_code_india">IN</string>
+    <string name="ctry_code_ireland">IE</string>
+
+    <string name="ctry_code_italy">IT</string>
+    <string name="ctry_code_japan">JP</string>
+    <string name="ctry_code_malaysia">MY</string>
+    <string name="ctry_code_mexico">MX</string>
+    <string name="ctry_code_netherlands">NL</string>
+    <string name="ctry_code_new_zealand">NZ</string>
+
+    <string name="ctry_code_poland">PL</string>
+    <string name="ctry_code_russia">RU</string>
+    <string name="ctry_code_singapore">SG</string>
+    <string name="ctry_code_slovenia">SI</string>
+    <string name="ctry_code_south_africa">ZA</string>
+    <string name="ctry_code_spain">ES</string>
+
+    <string name="ctry_code_sweden">SE</string>
+    <string name="ctry_code_switzerland">SZ</string>
+    <string name="ctry_code_u_a_e">AE</string>
+    <string name="ctry_code_u_s_a">US</string>
+    <string name="ctry_code_uk">GB</string>
+
+
+    <string name="australia_available">19,000+</string>
+    <string name="austria_available">2,000+</string>
+    <string name="belgium_available">4,500+</string>
+    <string name="brazil_available">10,000+</string>
+    <string name="canada_available">20,000+</string>
+
+    <string name="denmark_available">8,300+</string>
+    <string name="england_available">500+</string>
+    <string name="france_available">15,670+</string>
+    <string name="germany_available">13,400+</string>
+    <string name="holland_available">200+</string>
+
+    <string name="australia_accepted">700</string>
+    <string name="austria_accepted">57</string>
+    <string name="belgium_accepted">180</string>
+    <string name="brazil_accepted">540</string>
+    <string name="canada_accepted">3000</string>
+
+    <string name="denmark_accepted">600</string>
+    <string name="england_accepted">12</string>
+    <string name="france_accepted">903</string>
+    <string name="germany_accepted">580</string>
+    <string name="holland_accepted">5</string>
+
+    <!-- Filter String Values -->
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="filter_level_Title">Level</string>
+    <string name="filter_foundation_title">Foundation</string>
+    <string name="filter_diploma">Diploma</string>
+    <string name="text_undergrad_title">Undergrad</string>
+    <string name="text_postgrad_title">Postgrad</string>
+    <string name="filter_course_title">Courses</string>
+    <string name="filter_duration_title">Duration</string>
+    <string name="filter_duration_sub_title">of course</string>
+    <string name="filter_cost_title">Cost</string>
+    <string name="filter_cost_subtitle">Per Year</string>
+    <string name="filter_top_title_info">Your Search Results are based on your Grades and other profile entries. Go to</string>
+    <string name="btn_go_profile_text">Profile.</string>
+    <string name="level_of_course_text_size">Level of education</string>
+    <string name="text_foundation">Foundation</string>
+    <string name="text_diploma">Diploma</string>
+    <string name="text_undergrad">Undergraduate</string>
+    <string name="text_postgraduate">Post Graduate</string>
+    <string name="text_other1">Others</string>
+    <string name="title_courses">Courses</string>
+    <string name="text_course_duration">Duration of Course - </string>
+    <string name="duration_title_year">Year</string>
+    <string name="title_year_drop">v</string>
+    <string name="text_cost">Cost - </string>
+    <string name="text_usd_per_year">USD/Year</string>
+    <string name="location_title_text">Location</string>
+    <string name="location_country_text">Canada</string>
+    <string name="location_country_cities">Ontario, Toronto, Ontario, Toronto, Ontario, Toronto, Ontario, Toronto, Ontario, Toronto</string>
+    <string name="location_malaysia">Malaysia</string>
+    <string name="services_title_text">Services</string>
+    <string name="text_interest_title">Interests</string>
+    <string name="title_activity_filter_countries">FilterCountriesActivity</string>
+    <string name="country_list_indicator_desc">Country list indicator</string>
+    <string name="title_activity_interest">InterestActivity</string>
+    <string name="button_skip_text">Skip</string>
+    <string name="lauch_filter_title_text">Super Search Filter</string>
+    <string name="launch_interests_title_text"><![CDATA[Hobbies & Interest]]></string>
+    <string name="launch_location_title">Search for the right location</string>
+    <string name="welcome_title_text">Welcome to Seeka</string>
+    <string name="facebook_signup_notification_text">It\'s quicker and easier with Facebook</string>
+    <string name="facebook_button_text">Log in with Facebook</string>
+    <string name="fb_logo_description">Facebook Logo</string>
+    <string name="email_signup_login_info">You can also use your email address</string>
+    <string name="button_register_text">Register</string>
+    <string name="user_agreement_text">By signing up, you agree to</string>
+    <string name="clickable_user_agreement">Seeka\'s User Agreement</string>
+    <string name="login_title_text">Log In</string>
+    <string name="button_signup_text">Sign Up</string>
+    <string name="register_title">Register</string>
+
+    <string-array name="interests_text_array">
+        <item>Accommodation</item>
+        <item>Accounting Services</item>
+        <item>Airport Pickup</item>
+        <item>Bus</item>
+        <item>Childcare Centre</item>
+        <item>Personal and Academic Counselling</item>
+        <item>Cultural inclusion/Anti-racism programs</item>
+        <item>Disability Support</item>
+        <item>Employment and Career Development</item>
+        <item>Health Services</item>
+        <item>Housing Services</item>
+        <item>Legal Services</item>
+        <item>Medical</item>
+        <item>Sport Teams</item>
+        <item>Sports Center</item>
+        <item>Study Library Support</item>
+        <item>Swimming Pool</item>
+        <item>Technology Services</item>
+        <item>Train</item>
+    </string-array>
+
+    <string-array name="settings_text_array">
+        <item>Tutorial</item>
+        <item>Settings</item>
+        <item>Report Error</item>
+        <item>Help</item>
+    </string-array>
+
+
+    <!-- Facebook App ID For Facebook Registration -->
+    <string name="facebook_app_id">1027931773966333</string>
+
+    <!-- YouTube App ID -->
+    <string name="youtube_api_key">AIzaSyAufHxpLLTbIfS8Fk_2T_XQ0KV7Rytmkx8</string>
+
+    <string name="button_add_countries_description">Country Add Button</string>
+    <string name="services_add_button_description">Services Add Button</string>
+    <string name="image_services_one">Image Services One</string>
+    <string name="images_services_two_description">Image Services Two</string>
+    <string name="image_services_three_description">Image Services Three</string>
+    <string name="image_services_four_description">Image Services Four</string>
+    <string name="image_services_five_description">Image Services Five</string>
+    <string name="image_services_six_description">Image Services Six</string>
+
+    <!-- Custom SeekBar String Value -->
+    <string name="demo_min_label">1</string>
+    <string name="demo_max_label">70 000</string>
+    <string name="demo_max_label2">100</string>
+    <string name="world_rank_string">World rank:</string>
+    <string name="unlock_uni_name">ROYAL ROADS UNIVERSITY</string>
+    <string name="unlock_university_logo_desc">University Logo</string>
+    <string name="unlock_txt_value">Electronics And Electrical Engineering Electronics And Electrical Electrical</string>
+    <string name="unlock_course_duration_year">3 YEARS</string>
+    <string name="vnd_long_number">11 236 250 000</string>
+    <string name="vnd_string">VND/Year</string>
+    <string name="full_enrollment_text">Full Enrolment</string>
+    <string name="self_enrolment_text">Self Enrolment</string>
+    <string name="unlock_scholarship_text">Scholarship</string>
+    <string name="unlock_sponsor_company_logo">Sponsor Company Logo</string>
+    <string name="world_rank_value">19 361</string>
+    <string name="sort_text">Sort</string>
+    <string name="notification_text">Notifications</string>
+    <string name="packs_text">Packs</string>
+    <string name="produce_a4_text">Produce A4</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="number_users_unlocked_course">500 users have unlocked this course in the last 24 hours</string>
+    <string name="sort_confirm">Confirm</string>
+    <string name="sort_popup_title">Sort</string>
+
+    <string-array name="sort_text_array">
+        <item>Cost</item>
+        <item>Duration</item>
+        <item>Employability</item>
+        <item>Lifestyle Matching</item>
+        <item>Location</item>
+        <item>Ranking</item>
+        <item>Recognition</item>
+    </string-array>
+
+    <string name="enroll_layout">Enroll</string>
+    <string name="courses_layout">Courses</string>
+    <string name="email_popup_text_values">Email Course Information</string>
+    <string name="email_popup_text">Email:</string>
+    <string name="btn_email_popup_text">Send</string>
+
+
+    <string name="rank1">12 000</string>
+    <string name="rank2">7 000</string>
+    <string name="rank3">19 000</string>
+    <string name="rank4">15 000</string>
+    <string name="rank5">25 000</string>
+    <string name="locked_notification_title">Notification</string>
+    <string name="locked_notification_text">Would you like to save the filters and get notified when new courses on this search are available?</string>
+    <string name="req_title_text">Requirements</string>
+    <string name="req_adv_levels">Mathematics advanced levels and two other advanced levels</string>
+    <string name="req_text_adv_2">English at GCSE (ordinary) or advanced level</string>
+    <string name="unlock_popup_toolbar">Unlock</string>
+    <string name="unlock_course_popup_title">Unlock Course</string>
+    <string name="unlock_text1_string">Would you like to open this course to see more details about it?</string>
+    <string name="unlock_course_popup_button_text">Get Free Credits</string>
+    <string name="value_one">1</string>
+    <string name="credit_value">credit</string>
+    <string name="will_be_used_text_value">- will be used</string>
+    <string name="lock_unlocked_text">UNLOCK THIS COURSE</string>
+    <string name="sponssor_text">Sponsored By</string>
+    <string name="sponsore_name">Air Asia</string>
+    <string name="vnd_value_text">11 232 000 VND/Year</string>
+    <string name="profile_email_text">Email</string>
+    <string name="profile_firstname_string">First name</string>
+    <string name="profile_lastname_string">Last name</string>
+    <string name="profile_gender_text_string">Gender</string>
+    <string name="profile_no_data_entered">-</string>
+    <string name="bday_text_string">Birthday</string>
+    <string name="origin_text_string">Origin</string>
+    <string name="text_citizenship_string">Citizenship</string>
+    <string name="skype_text_string">Skype ID</string>
+    <string name="phone_text_string">Phone</string>
+    <string name="profile_update_button">Update</string>
+    <string name="aca_qua_title_text">Academic Qualification</string>
+    <string name="level_string_text">Level</string>
+    <string name="text_origin_string">Origin</string>
+    <string name="texxt_edu_system">Education System</string>
+    <string name="text_institution_string">Institution</string>
+    <string name="spm_grades_title">SPM Grades</string>
+    <string name="calculate_GPA_title">Calculate your GPA</string>
+    <string name="btn_grade_converter_text">Grades Converter</string>
+    <string name="grade_converter_text">To calculate your overall GPA, please use the grades converter.</string>
+    <string name="gpa_score_string">GPA</string>
+    <string name="txtEngQuaTitle">English Qualification</string>
+    <string name="eng_qua_title">English Qualification</string>
+    <string name="english_prequsiste_text">Were you</string>
+    <string name="english_taught_text">TAUGHT</string>
+    <string name="in_englis_text">in English?</string>
+    <string name="ielts_string">IELTS</string>
+    <string name="toefl_string">TOEFL</string>
+    <string name="no_string">No</string>
+    <string name="overall_string">Overall</string>
+    <string name="prof_visit_title">Where would you like to study or visit?</string>
+    <string name="profile_hobbies_interest_title">Hobbies/Interests</string>
+    <string name="prof_hobbies_interests_title1">Art</string>
+    <string name="prof_hobbies_interests_title2">Sport</string>
+    <string name="prof_hobbies_interests_values1">Art Gallery, Dance, Theatre, Music Orchestra, Sculpture Centre, Art Studios, Drama Halls</string>
+    <string name="prof_hobbies_interests_values2">Football, Handball, Basketball, Baseball, Motor Sports, Swimming, F1 Circuits, Athletics</string>
+    <string name="prof_career_title">Career</string>
+    <string name="profile_info_string">About me</string>
+    <string name="profile_edu_page_string">Education</string>
+    <string name="profile_page_interets_string">Interests</string>
+    <string name="terms_title">Terms</string>
+    <string name="top_terms_message">Please ensure Fresh Futures Group is not responsible for your English Grading minimum Requirements, you acknowledge the following terms:</string>
+    <string name="txt_terms1">1.  If English is not the primary medium of instructions for your high school, you may be required to complete IELTS or TOEFL to meet requirements.</string>
+    <string name="txt_terms2">2.  Your personal grades will not be disclosed to any 3rd party and your history search will not be used by any 3rd party and stay disclosed on your personal device and not shared with anybody or any company.</string>
+    <string name="txt_term3">3.  You acknowledge the university reserve the right to reject your application.</string>
+    <string name="txt_terms4">4.  Minimum academic requirements are provided by the university and updated by Fresh Futures. Student is required to ensure that he has picked correct subjects during their high school study or equivalent studies to meet the University subject requirements. Fresh Futures advisor team will</string>
+    <string name="terms_bar_title"><![CDATA[Terms & Policy]]></string>
+    <string name="currency_converter_bar_text">Currency Converter</string>
+    <string name="credit_balance_text">Your Credit balance:</string>
+    <string name="credit_balance_value">5</string>
+    <string name="credit_top_quote_string">\"It only takes one credit to unlock your future\"</string>
+    <string name="credit_promo_text_string">Enter promotion code here</string>
+    <string name="promo_button_text">Submit</string>
+    <string name="promo_text_palceholder">Ex.: 10398723</string>
+    <string name="text_five_credits">5 Credits</string>
+    <string name="text_price">0.99</string>
+    <string name="text_usd_currency">USD</string>
+    <string name="text_fifteen_credits">15 Credits</string>
+    <string name="text_299_price">2.99</string>
+    <string name="text_thirtyfive_credits">35 Credits</string>
+    <string name="text_499_price">4.99</string>
+    <string name="text_fifty_credits">50 Credits</string>
+    <string name="text_799_price">7.99</string>
+    <string name="text_hundred_credits">100 Credits</string>
+    <string name="text_1199_price">11.99</string>
+    <string name="text_one_fifty_credits">150 Credits</string>
+    <string name="text_2099_price">20.99</string>
+    <string name="purchase_type_string">Purchase Type</string>
+    <string name="purchase_details_string">Details</string>
+    <string name="purchase_price_string">Price</string>
+    <string name="about_ctry_text_string">About Country</string>
+    <string name="institutions_articipating_fair">200 institutions will participate</string>
+    <string name="country_of_institutions">from 15 countries with 26 142 Courses</string>
+    <string name="fair_date1">October 3 to 5 - Kuala Lumpur</string>
+    <string name="fair_date2">September 29 to 30 - Kuala Terengganu</string>
+    <string name="info_world_rank">World Rank</string>
+    <string name="info_world_rank_value">200 351</string>
+    <string name="info_course_information_string">Course Information</string>
+    <string name="info_faculty_string">Faculty</string>
+    <string name="course_info_course_subtitle">Course</string>
+    <string name="course_info_duration_subtitle">Duration</string>
+    <string name="course_info_course_starts_subtitle">Course Starts:</string>
+    <string name="course_info_cost_subtitle">Cost</string>
+    <string name="course_info_btn_website_info_text">Website Course info</string>
+    <string name="course_info_twinning_string">Twinning Program</string>
+    <string name="course_info_min_req_string">Minimum Requirements</string>
+    <string name="course_min_req_grades_subtitle">Grades</string>
+    <string name="course_info_a_level_title">A Levels</string>
+    <string name="course_info_o_level_title">O Levels</string>
+    <string name="detailed_grade_req_text">Detailed Grade Requirements</string>
+    <string name="course_info_eng_req_title">English Requirements</string>
+    <string name="eng_req_exemptions">Exemptions</string>
+    <string name="tot_ava_jobs_title">Total Available Jobs</string>
+    <string name="button_job_details_text">Job Details</string>
+    <string name="button_display_all_interets">Display all interests</string>
+    <string name="whats_around_the_university">What\'s around the University</string>
+    <string name="google_earth_text">Have a virtual tour</string>
+    <string name="scholarship_availability_title">Scholarship Availability</string>
+    <string name="scholarsip_ava_string">Only students who are U.S. Citizens or Permanent Residents (\"green card holders\") are eligible for merit or need-based scholarships through this scholarship scholarship scholarship scholarship</string>
+    <string name="uni_info_title">University information</string>
+    <string name="open_string">Open</string>
+    <string name="uni_info_phone_string">Phone</string>
+    <string name="or_string">Or</string>
+    <string name="uni_info_email_string">Email</string>
+    <string name="uni_info_web_sting">Website</string>
+    <string name="about_us_string">About Us</string>
+    <string name="total_students_string">Total Students</string>
+    <string name="concordia_uni_info_string">Concordia Unoversity of Edmonton has played an important role in Alberta\'a educational history since 1921. In 1987, Concordia began to award undergraduate degrees in the arts and sciences. Today, Concrodia\'s offerings include over 45 majors and minors in the fields of Arts, Sciences and Management; 2 after-degree programs; 3 masters degree and several graduate degrees. Lorem ipsum dolor sit amet consecteur lorem lorem ipsum ipsum</string>
+    <string name="button_read_more_string">Read More</string>
+    <string name="course_info_services">Services</string>
+    <string name="see_all_servies_string">See All</string>
+    <string name="visa_string">Visa</string>
+    <string name="read_more_string">Read More</string>
+    <string name="media_string">Media</string>
+
+    <string-array name="notification_text_array">
+        <item>What to know if the price changes</item>
+        <item>Push Important University Information</item>
+        <item>Let me know if my application was successful</item>
+        <item>Allow Institutions to view my Grades</item>
+        <item>Allow Institutions contact me for an interview</item>
+        <item>Want to know if a new scholarship is on offer</item>
+    </string-array>
+
+    <string-array name="notification_settings_array">
+        <item>New Courses</item>
+        <item>New University</item>
+        <item>Courses that match my Price</item>
+        <item>Specials / Discounts</item>
+    </string-array>
+    <string name="title_activity_player">Video</string>
+    <string name="view_more_string">View More</string>
+    <string name="apply_for_offer_string">Apply For Your Offer</string>
+    <string name="short_skilled_jobs_string">Short Skilled Jobs</string>
+    <string name="comp_hiring_graduates_string">Companies Hiring Graduates</string>
+    <string name="internship_string">Internship</string>
+    <string name="pop_job_web_string">Popular Job Website</string>
+    <string name="need_qua_req_string">Need your Qualification Recognised?</string>
+    <string name="btn_qua_recog_text">Qualification Recognition</string>
+    <string name="jobstreet_string">Job Street</string>
+    <string name="jobsdb_string">Job SDB</string>
+    <string name="seek_string">Seek</string>
+    <string name="indeed_string">Indeed</string>
+    <string name="employer_string">Employer</string>
+    <string name="sector_string">Sector</string>
+    <string name="internship_agreement_string">\"If you are looking for internships within Australia, please use any of the job websites or alternatively you be able to get one of our own recruitment team memebers to locate you an internship. Fresh Futures charges between $1000 to $4000 depending on an internship. If in any case we do not find you an internship, this is a 100% money refund if job is not located as to the agreement between the Recruiter and Student\"</string>
+    <string name="popular_job_website">Popular Job Website</string>
+    <string name="contact_us_string">Contact Us</string>
+    <string name="notify_me_string">Notify Me</string>
+    <string name="settings_string">Settings</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="close_string">Close</string>
+    <string name="title_activity_website">Website</string>
+    <string name="title_activity_unlock_map_fragment">Maps</string>
+    <string name="title_activity_pay_pal">PayPal</string>
+    <string name="home_string">Home</string>
+    <string name="search_string">Search</string>
+    <string name="unlocked_string">Unlocked</string>
+    <string name="menu_string">Menu</string>
+    <string name="profile_on_string">Profile- On</string>
+    <string name="faculty_title_string">Faculty</string>
+    <string name="title_activity_faculty">Faculty</string>
+    <string name="aviation_string">Aviation</string>
+    <string name="archi_building_string"><![CDATA[Architecture Building & Plan]]></string>
+    <string name="agriculture_string">Agriculture</string>
+    <string name="biz_fin_acc_string">Biz, Finance Accounting</string>
+    <string name="comp_sc_string"><![CDATA[Computer Science & I.T]]></string>
+    <string name="creative_arts_string">Creative Arts and Design</string>
+    <string name="education_string">Education</string>
+    <string name="engineering_string">Engineering</string>
+    <string name="humanities_social_sc"><![CDATA[Humanities & Social Science]]></string>
+    <string name="literature_string"><![CDATA[Language & Literature]]></string>
+    <string name="law_string">Law</string>
+    <string name="mass_comm_media"><![CDATA[Mass Comm & Media]]></string>
+    <string name="med_nursing_string"><![CDATA[Medical & Nursing]]></string>
+    <string name="health_science_string"><![CDATA[Science & Health Science]]></string>
+    <string name="tourism_string"><![CDATA[Tourism & Hotel Management]]></string>
+    <string name="filter_course_test">Engineering; Medical Sciences; Engineering; Engineering; Engineering; Engineering; Engineering; Engineering;</string>
+    <string name="title_activity_filter_courses">Courses</string>
+    <string name="course_hint_text">What are you looking for?</string>
+    <string name="search_search_bar_text">Where would you like to study?</string>
+
+
+    <string-array name="filter_courses_array">
+        <item>Engineering</item>
+        <item>Math</item>
+        <item>Science</item>
+        <item>Technology</item>
+    </string-array>
+
+    <string-array name="filter_courses_added_array">
+        <item>Engineering</item>
+        <item>Math</item>
+        <item>Science</item>
+        <item>Technology</item>
+        <item>Literature</item>
+        <item>Arts</item>
+        <item>Medicine</item>
+        <item>Psychology</item>
+        <item>Law</item>
+        <item>Business</item>
+        <item>Entrepreneurship</item>
+    </string-array>
+
+    <string-array name="filter_hobbies_array">
+        <item>Handball</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Hockey</item>
+        <item>Golf</item>
+        <item>Athletics</item>
+        <item>Moto Gp</item>
+        <item>Swimming</item>
+        <item>Golf</item>
+        <item>Rugby</item>
+        <item>Tennis</item>
+        <item>Table Tennis</item>
+    </string-array>
+
+    <string-array name="search_country_name_array">
+
+
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Malaysia</item>
+        <item>Mexico</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Poland</item>
+        <item>Russia</item>
+        <item>Singapore</item>
+        <item>Slovenia</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>U.A.E</item>
+        <item>U.S.A</item>
+        <item>United Kingdom</item>
+
+    </string-array>
+
+
+    <string-array name="search_country_code_array">
+
+        <item>AUS</item>
+        <item>AT</item>
+        <item>BR</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>CZ</item>
+
+        <item>DK</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>DE</item>
+        <item>IS</item>
+        <item>IN</item>
+        <item>IE</item>
+
+        <item>IT</item>
+        <item>JP</item>
+        <item>MY</item>
+        <item>MX</item>
+        <item>NL</item>
+        <item>NZ</item>
+
+        <item>PL</item>
+        <item>RU</item>
+        <item>SG</item>
+        <item>SI</item>
+        <item>ZA</item>
+        <item>ES</item>
+
+        <item>SE</item>
+        <item>SZ</item>
+        <item>AE</item>
+        <item>USA</item>
+        <item>UK</item>
+
+    </string-array>
+
+    <string-array name="search_country_available_array">
+
+        <item>19,000+</item>
+        <item>2,000+</item>
+        <item>4,500+</item>
+        <item>10,000+</item>
+        <item>20,000+</item>
+        <item>8,300+</item>
+        <item>500+</item>
+        <item>15,670+</item>
+        <item>13,400+</item>
+        <item>2,000+</item>
+        <item>7,000+</item>
+        <item>570+</item>
+        <item>180+</item>
+        <item>540+</item>
+        <item>3,000+</item>
+        <item>6,000+</item>
+        <item>120+</item>
+        <item>9,030+</item>
+        <item>5,800+</item>
+        <item>500+</item>
+        <item>2,300+</item>
+        <item>120+</item>
+        <item>150+</item>
+        <item>1,000+</item>
+        <item>2,100+</item>
+        <item>5,400+</item>
+        <item>10,000+</item>
+        <item>3,500+</item>
+        <item>15,000+</item>
+        <item>9,000+</item>
+    </string-array>
+
+
+    <string-array name="search_level_list">
+
+        <item>Certificate</item>
+        <item>English</item>
+        <item>Foundation</item>
+        <item>Diploma</item>
+        <item>Undergraduate</item>
+        <item>Postgraduate</item>
+
+    </string-array>
+
+    <string-array name="search_level_code">
+
+        <item>CF</item>
+        <item>EN</item>
+        <item>IF</item>
+        <item>DP</item>
+        <item>UG</item>
+        <item>PG</item>
+
+    </string-array>
+
+    <string-array name="search_country_accepted_array">
+
+        <item>8,000</item>
+        <item>1,200</item>
+        <item>1,500</item>
+        <item>6,000</item>
+        <item>13,000</item>
+        <item>3,900</item>
+        <item>300</item>
+        <item>8,900</item>
+        <item>7,700</item>
+        <item>100</item>
+        <item>500</item>
+        <item>221</item>
+        <item>112</item>
+        <item>290</item>
+        <item>9,000</item>
+        <item>600</item>
+        <item>12</item>
+        <item>903</item>
+        <item>580</item>
+        <item>50</item>
+        <item>230</item>
+        <item>120</item>
+        <item>150</item>
+        <item>100</item>
+        <item>210</item>
+        <item>540</item>
+        <item>1,000</item>
+        <item>350</item>
+        <item>1,500</item>
+        <item>900</item>
+    </string-array>
+
+
+    <string-array name="srch_country_name_array">
+
+        <item></item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Malaysia</item>
+        <item>Mexico</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Poland</item>
+        <item>Russia</item>
+        <item>Singapore</item>
+        <item>Slovenia</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>U.A.E</item>
+        <item>U.S.A</item>
+        <item>United Kingdom</item>
+
+    </string-array>
+
+    <string-array name="srch_country_code_array">
+
+        <item></item>
+        <item>AUS</item>
+        <item>AT</item>
+        <item>BR</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>CZ</item>
+
+        <item>DK</item>
+        <item>EG</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>DE</item>
+        <item>IS</item>
+        <item>IN</item>
+        <item>IE</item>
+
+        <item>IT</item>
+        <item>JP</item>
+        <item>MY</item>
+        <item>MX</item>
+        <item>NL</item>
+        <item>NZ</item>
+
+        <item>PL</item>
+        <item>RU</item>
+        <item>SG</item>
+        <item>SI</item>
+        <item>ZA</item>
+        <item>ES</item>
+
+        <item>SE</item>
+        <item>SZ</item>
+        <item>AE</item>
+        <item>USA</item>
+        <item>UK</item>
+
+    </string-array>
+
+    <string-array name="srch_country_available_array">
+
+        <item></item>
+        <item>19,000+</item>
+        <item>2,000+</item>
+        <item>4,500+</item>
+        <item>10,000+</item>
+        <item>20,000+</item>
+        <item>8,300+</item>
+        <item>500+</item>
+        <item>100+</item>
+        <item>15,670+</item>
+        <item>13,400+</item>
+        <item>2,000+</item>
+        <item>7,000+</item>
+        <item>570+</item>
+        <item>180+</item>
+        <item>540+</item>
+        <item>3,000+</item>
+        <item>6,000+</item>
+        <item>120+</item>
+        <item>9,030+</item>
+        <item>5,800+</item>
+        <item>500+</item>
+        <item>2,300+</item>
+        <item>120+</item>
+        <item>150+</item>
+        <item>1,000+</item>
+        <item>2,100+</item>
+        <item>5,400+</item>
+        <item>10,000+</item>
+        <item>3,500+</item>
+        <item>15,000+</item>
+        <item>9,000+</item>
+    </string-array>
+
+
+    <string-array name="srch_country_accepted_array">
+
+        <item></item>
+        <item>8,000</item>
+        <item>1,200</item>
+        <item>1,500</item>
+        <item>6,000</item>
+        <item>13,000</item>
+        <item>3,900</item>
+        <item>300</item>
+        <item>8,900</item>
+        <item>7,700</item>
+        <item>100</item>
+        <item>500</item>
+        <item>221</item>
+        <item>112</item>
+        <item>290</item>
+        <item>9,000</item>
+        <item>600</item>
+        <item>12</item>
+        <item>903</item>
+        <item>580</item>
+        <item>50</item>
+        <item>230</item>
+        <item>120</item>
+        <item>150</item>
+        <item>100</item>
+        <item>210</item>
+        <item>540</item>
+        <item>1,000</item>
+        <item>350</item>
+        <item>1,500</item>
+        <item>900</item>
+    </string-array>
+
+    <string-array name="srch_result_country_code_array">
+
+        <item>AU</item>
+        <item>AT</item>
+        <item>BR</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>CZ</item>
+
+        <item>DK</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>DE</item>
+        <item>IS</item>
+        <item>IN</item>
+        <item>IE</item>
+
+        <item>IT</item>
+        <item>JP</item>
+        <item>MY</item>
+        <item>MX</item>
+        <item>NL</item>
+        <item>NZ</item>
+
+        <item>PL</item>
+        <item>RU</item>
+        <item>SG</item>
+        <item>SI</item>
+        <item>ZA</item>
+        <item>ES</item>
+
+        <item>SE</item>
+        <item>SZ</item>
+        <item>AE</item>
+        <item>US</item>
+        <item>UK</item>
+
+    </string-array>
+
+    <string name="link_profile">Your Search Results are based on your grades and other profile entries. Go on <a href="http://www.www.com" >Profile</a> to update your profile</string>
+    <string name="title_activity_search_by_country">Search</string>
+    <string name="show_all_courses_string">Show all courses</string>
+    <string name="title_activity_main_search">Worldwide</string>
+    <string name="title_activity_country_info">Countries</string>
+    <string name="title_activity_country_details">Country</string>
+    <string name="gender_dialog_title">Gender</string>
+    <string name="male_string">Male</string>
+    <string name="female_string">Female</string>
+    <string name="other_string">Other</string>
+    <string name="datepicker_dialog_title">Select date</string>
+    <string name="set_string">Set</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="nationality_title_string">Select Country</string>
+    <string name="edu_level_title_string">Education Level</string>
+    <string name="high_school_string">High School</string>
+    <string name="edu_level_first_year_string">First Year (University)</string>
+    <string name="edu_level_second_year_string">Second Year (Univerity)</string>
+    <string name="edu_level_diploma_string">Diploma</string>
+    <string name="edu_level_gpa_string">GPA</string>
+    <string name="edu_level_degree_string">Degree</string>
+    <string name="course_grades_title">Grades</string>
+    <string name="title_activity_profile_interest_list">Interests</string>
+    <string name="title_activity_profile_career">Careers</string>
+    <string name="title_activity_compare_courses">Compare Courses</string>
+    <string name="title_activity_offers">Offers</string>
+    <string name="news_string">News</string>
+    <string name="title_activity_submit_offer">SubmitOfferActivity</string>
+    <string name="title_activity_faq">FAQActivity</string>
+    <string name="hint_username_text">Username</string>
+
+    <string name="SEEKA_PREF_SESSION">session_token</string>
+    <string name="ctry_visa_string">Visa</string>
+    <string name="cost_living_string">Cost of Living</string>
+    <string name="ctry_climate_string">Climate</string>
+    <string name="ctry_job_prospect">Job prospect / Part-time Jobs</string>
+    <string name="intl_health_cover">International health cover</string>
+    <string name="safety_emergency">Safety / Emergency Contact</string>
+    <string name="media_value_string">Media</string>
+    <string name="title_activity_about_country">About</string>
+    <string name="title_activity_profile_ctry_interest">Select Country</string>
+    <string name="title_activity_settings_notification">Notifications</string>
+    <string name="notification_title_string">Notifications</string>
+    <string name="paypal_paynet_string">Paypal</string>
+    <string name="google_play_payment">Play Store</string>
+    <string name="cheque_payment">Cheque</string>
+    <string name="cost_per_year_string">/Year</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+    <string name="new_user_title_string">Start searching through 1 million courses, every second a new course is unlocked and see how it looks.</string>
+    <string name="new_user_welcome_string">Welcome Back,</string>
+    <string name="search_box_text_hint"><i>Search for courses</i></string>
+    <string name="select_destination_string">Select destination</string>
+    <string name="select_level_string">Select Level</string>
+    <string name="search_suggestion_title">Suggestions</string>
+    <string name="select_lvl_string">Select level</string>
+    <string name="select_course_title">Select Course</string>
+    <string name="select_lvl_title_string">Select Level</string>
+    <string name="select_level_title_string">Select Level</string>
+    <string name="select_ctry_title">Select Country</string>
+
+    <string name="default_username">User</string>
+
+</resources>

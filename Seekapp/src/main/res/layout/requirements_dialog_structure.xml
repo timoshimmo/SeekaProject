@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/locked_notification_background"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/notifyBody"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_list_height"
+            android:id="@+id/notifyContainer">
+
+
+            <ImageView
+                android:layout_width="@dimen/locked_notification_img_width"
+                android:layout_height="@dimen/locked_notification_img_height"
+                android:id="@+id/ReqImage"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/requirements_icon"
+                android:layout_marginTop="@dimen/locked_notification_img_top"
+                android:scaleType="fitCenter" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/req_title_text"
+                android:id="@+id/txtReqTitle"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/locked_notification_title_size"
+                android:textColor="@color/light_gray"
+                android:layout_marginTop="@dimen/notification_top_margin" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/req_adv_levels"
+                android:id="@+id/txtReqText1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/req_first_text_top"
+                android:textSize="@dimen/locked_notification_text_size"
+                android:textColor="@color/dark_gray"
+                android:layout_marginRight="@dimen/locked_notification_margin_left_right"
+                android:layout_marginLeft="@dimen/locked_notification_margin_left_right" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/req_text_adv_2"
+                android:id="@+id/txtReqText2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/req_second_text_top"
+                android:textSize="@dimen/locked_notification_text_size"
+                android:textColor="@color/dark_gray"
+                android:layout_marginRight="@dimen/locked_notification_margin_left_right"
+                android:layout_marginLeft="@dimen/locked_notification_margin_left_right"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_button_height"
+            android:text="@string/sort_confirm"
+            android:id="@+id/btnReqConfirm"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sort_btn_confirm_text_size"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/spons_pre_margin_right"
+            android:layout_marginRight="@dimen/spons_pre_margin_right"
+            android:layout_below="@+id/notifyContainer"
+            android:layout_marginBottom="@dimen/spons_pre_margin_right"
+            android:textColor="@color/white_color"
+            android:background="@drawable/button_very_curved_corners"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

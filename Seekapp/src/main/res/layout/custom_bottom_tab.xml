@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/home_bottom_bar_width"
+            android:layout_height="@dimen/home_bottom_bar_height"
+            android:id="@+id/imgBtnMenu"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/menu_icon"
+            android:scaleType="fitCenter" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_string"
+            android:id="@+id/txtMenuIcon"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/home_bottombar_text_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp" />
+
+</LinearLayout>

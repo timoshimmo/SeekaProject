@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.freshfutures.seeka.StartActivityFragmentOne"
+    android:orientation="vertical"
+    android:id="@+id/welcomeLayout"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/welcomeContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgSeekaLogo"
+            android:contentDescription="@string/seeka_launch_logo_desc"
+            android:layout_gravity="center_horizontal"
+        android:src="@mipmap/seeka_logo_icon"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launch_top_intro_text1"
+            android:id="@+id/txtLaunchTopIntro1"
+            android:layout_gravity="center_horizontal"
+        android:textColor="@color/dark_gray"
+            android:textSize="@dimen/welcome_info_text_size"
+        android:layout_below="@+id/txtLaunchBottomIntro1"
+        android:layout_centerHorizontal="true" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLaunchBottomIntro1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/launch_intro1_text_top"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/welcome_info_text_size"
+            android:text="@string/launch_bottom_intro1"
+            android:layout_below="@+id/imgSeekaLogo"
+            android:layout_centerHorizontal="true" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/btnGetStarted_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="@drawable/getstarted_text_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:background="@drawable/get_started_background"
+            android:id="@+id/ButtonGetStarted"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="85dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:id="@+id/short_skilled_row">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senior Managers"
+            android:id="@+id/txtTitleBox"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01">
+
+        <View
+            android:layout_height="match_parent"
+            android:background="@color/background_gray"
+            android:layout_width="@dimen/login_form_image_divider_width" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="financial, communications and other business services "
+            android:id="@+id/txtDescBox"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/mid_gray"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</TableRow>

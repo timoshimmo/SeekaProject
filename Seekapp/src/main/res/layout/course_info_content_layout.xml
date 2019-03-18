@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/courseInfoContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/courseInfoBody"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_course_information_string"
+            android:id="@+id/txtCourseInfoTitle"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@color/pblue_color"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_faculty_string"
+            android:id="@+id/textView25"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/course_information_subtitles_text_size"
+            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronic and Electrical Engineering"
+            android:id="@+id/txtCOurseInfoFaculty"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/course_information_subtitles_text_size"
+            android:layout_marginBottom="@dimen/course_information_details_bottom"
+            android:textIsSelectable="false" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_info_course_subtitle"
+            android:id="@+id/textView255"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/course_information_subtitles_text_size"
+            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronic and Electrical Engineering And Electrical electronics Engineering"
+            android:id="@+id/txtCourseInfoCourse"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/course_information_subtitles_text_size"
+            android:layout_marginBottom="@dimen/course_information_details_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/courseDurationCostContainer"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/courseInfocourseDuration">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_info_duration_subtitle"
+                    android:id="@+id/textView26"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/course_information_subtitles_text_size"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/course_information_details_bottom">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="3 Years"
+                        android:id="@+id/txtCourseInfoDurationYears"
+                        android:textSize="@dimen/course_information_subtitles_text_size"
+                        android:textColor="@color/mid_gray"
+                        android:layout_weight="0.5" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Full Time"
+                        android:id="@+id/txtCourseInfoStudyDurationType"
+                        android:textSize="@dimen/course_information_subtitles_text_size"
+                        android:textColor="@color/mid_gray"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_info_course_starts_subtitle"
+                    android:id="@+id/textView28"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/course_information_subtitles_text_size"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feb, Jul, Nov"
+                    android:id="@+id/txtCourseStartsMonths"
+                    android:textSize="@dimen/course_information_subtitles_text_size"
+                    android:textColor="@color/mid_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/menu_title_divider_height"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:id="@+id/course_info_vertical_divider" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/courseInfoCourseCost"
+                android:paddingLeft="@dimen/course_info_course_cost_padding_left">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_info_cost_subtitle"
+                    android:id="@+id/textView27"
+                    android:textSize="@dimen/course_information_subtitles_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250 000 000"
+                    android:id="@+id/txtCourseFeeValue"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/course_information_subtitles_text_size" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aus/Year"
+                    android:id="@+id/txtCourseFeeCurrency"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/course_information_subtitles_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/course_info_btn_website_info_text"
+            android:id="@+id/btnWebCourseInfo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

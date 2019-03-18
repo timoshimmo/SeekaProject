@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/CourseMediaContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/CourseMediaBody"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_string"
+            android:id="@+id/textMediaTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/youtube_list"
+                android:layout_gravity="center_horizontal"
+                android:divider="@color/background_gray"
+                android:dividerHeight="0.7dp"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:id="@+id/btnViewMoreVideos"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/unlock_course_button_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"
+            android:text="@string/view_more_string" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

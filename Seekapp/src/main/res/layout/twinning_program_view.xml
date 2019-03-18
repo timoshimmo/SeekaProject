@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/twinningContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/twinningBody"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_info_twinning_string"
+            android:id="@+id/txtTwinningTitle"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="University of Northern British Columbia"
+                android:id="@+id/txtTwinningUni"
+                android:textSize="@dimen/course_information_subtitles_text_size"
+                android:textColor="@color/mid_gray"
+                android:layout_weight="0.7" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/twinningUniLogoBody"
+                android:layout_weight="0.3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/twinning_uni_logo_height_width"
+                android:layout_height="@dimen/twinning_uni_logo_height_width"
+                android:layout_centerInParent="true"
+                android:background="@drawable/uni_logo_oval_back"
+                android:paddingBottom="1dp"
+                android:paddingTop="0.2dp"
+                android:paddingRight="0.2dp"
+                android:paddingLeft="0.2dp">
+
+                <ImageView
+                    android:layout_width="@dimen/twinning_uni_logo_height_width"
+                    android:layout_height="@dimen/twinning_uni_logo_height_width"
+                    android:id="@+id/imgTwinningUniLogo"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/oval_widgets"
+                    android:src="@mipmap/unbc_logo"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:paddingRight="1dp"
+                    android:paddingLeft="1dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

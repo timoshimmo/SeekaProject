@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/minReqContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/minReqBody"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_info_min_req_string"
+            android:id="@+id/txtReqTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_min_req_grades_subtitle"
+            android:id="@+id/textView33"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="@dimen/course_containers_bottom_padding">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_info_a_level_title"
+                    android:id="@+id/textView34"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/txtALevelsGrades"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/mid_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/menu_title_divider_height"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:id="@+id/course_info_grades_divider" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_info_o_level_title"
+                    android:id="@+id/textView34"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/txtOLevelsGrades"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/mid_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/detailed_grade_req_text"
+            android:id="@+id/btnDeatiledGradeReq"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/website_course_info_top_margin" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_info_eng_req_title"
+            android:id="@+id/textView35"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/course_information_subtitles_text_size"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/engIELTSTOEFLContainer"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/scoreIELTS"
+                android:padding="@dimen/eng_req_title_bottom_margin">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ielts_string"
+                    android:id="@+id/textIELTSTitle"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/course_information_subtitles_text_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/course_info_duration_body_bottom_margin">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overall_string"
+                        android:id="@+id/txtIELTSOverallText"
+                        android:textSize="@dimen/course_info_section_title_text_size"
+                        android:textColor="@color/mid_gray"
+                        android:layout_weight="0.5" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="8.6"
+                        android:id="@+id/txtIELTSOverallValue"
+                        android:textSize="@dimen/course_information_subtitles_text_size"
+                        android:textColor="@color/dark_gray"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textIsSelectable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eng_req_top_lines_body_height"
+                    android:layout_gravity="center_horizontal"
+                    android:baselineAligned="false">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.6dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line1"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerVertical="true" />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line2"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/ielts_data_line1"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/light_blue"
+                        android:id="@+id/ielts_data_line3"
+                        android:layout_marginLeft="@dimen/ielts_line_3_left_margin"
+                        android:layout_marginRight="@dimen/ielts_line_3_right_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center_horizontal">
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="15dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line4" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eng_req_section_img_width_height"
+                            android:layout_height="@dimen/eng_req_section_img_width_height"
+                            android:id="@+id/imgOverall1"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/ielts_overall_one"
+                            android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line10"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6.8"
+                                android:id="@+id/txtIELTSReading"
+                                android:textSize="@dimen/course_information_subtitles_text_size"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/mid_gray" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center_horizontal">
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="15dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line5" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eng_req_section_img_width_height"
+                            android:layout_height="@dimen/eng_req_section_img_width_height"
+                            android:id="@+id/imgOverall2"
+                            android:src="@mipmap/ielts_overall_two"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line11"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5.8"
+                                android:id="@+id/txtIELTSListening"
+                                android:textSize="@dimen/course_information_subtitles_text_size"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/mid_gray" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center_horizontal">
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="15dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line6" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eng_req_section_img_width_height"
+                            android:layout_height="@dimen/eng_req_section_img_width_height"
+                            android:id="@+id/imgOverall3"
+                            android:src="@mipmap/ielts_overall_three"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line12"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7.8"
+                                android:id="@+id/txtIELTSWriting"
+                                android:textSize="@dimen/course_information_subtitles_text_size"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/mid_gray" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center_horizontal">
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="15dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line7" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eng_req_section_img_width_height"
+                            android:layout_height="@dimen/eng_req_section_img_width_height"
+                            android:id="@+id/imgOverall4"
+                            android:src="@mipmap/ielts_overall_four"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                            android:background="@color/light_blue"
+                            android:id="@+id/ielts_data_line13"
+                            android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8.5"
+                                android:id="@+id/txtIELTSSpeaking"
+                                android:textSize="@dimen/course_information_subtitles_text_size"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/mid_gray" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/menu_title_divider_height"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:id="@+id/course_info_vertical_divider" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/engReqTOEFLContainer"
+                android:paddingLeft="@dimen/course_info_course_cost_padding_left"
+                android:padding="@dimen/eng_req_title_bottom_margin">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scoreTOEFL">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toefl_string"
+                        android:id="@+id/textTOEFLTitle"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/course_info_section_title_text_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/course_info_duration_body_bottom_margin">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/overall_string"
+                            android:id="@+id/txtTOEFLOverallText"
+                            android:textSize="@dimen/course_info_section_title_text_size"
+                            android:textColor="@color/mid_gray"
+                            android:layout_weight="0.5" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="8.6"
+                            android:id="@+id/txtTOEFLOverallValue"
+                            android:textSize="@dimen/course_info_section_title_text_size"
+                            android:textColor="@color/dark_gray"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/eng_req_top_lines_body_height"
+                        android:layout_gravity="center_horizontal"
+                        android:baselineAligned="false">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.6dp"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line1"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="false"
+                                android:layout_centerVertical="true" />
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line2"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="false"
+                                android:layout_below="@+id/toefl_data_line1"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.6dp"
+                            android:background="@color/light_blue"
+                            android:id="@+id/toefl_data_line3"
+                            android:layout_marginLeft="@dimen/ielts_line_3_left_margin"
+                            android:layout_marginRight="@dimen/ielts_line_3_right_margin" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center_horizontal">
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="15dp"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line4" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imgOverall1"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/ielts_overall_one"
+                                android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line10"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6.8"
+                                    android:id="@+id/txtTOEFLReading"
+                                    android:textSize="@dimen/course_information_subtitles_text_size"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/mid_gray" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center_horizontal">
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="15dp"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line5" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imgOverall2"
+                                android:src="@mipmap/ielts_overall_two"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line11"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5.8"
+                                    android:id="@+id/txtTOEFListening"
+                                    android:textSize="@dimen/course_information_subtitles_text_size"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/mid_gray" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center_horizontal">
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="15dp"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line6" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imgOverall3"
+                                android:src="@mipmap/ielts_overall_three"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line12"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7.8"
+                                    android:id="@+id/txtTOEFLWriting"
+                                    android:textSize="@dimen/course_information_subtitles_text_size"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/mid_gray" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center_horizontal">
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="15dp"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line7" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/imgOverall4"
+                                android:src="@mipmap/ielts_overall_four"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="@dimen/eng_req_image_top_margin"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <View
+                                android:layout_width="0.6dp"
+                                android:layout_height="@dimen/course_info_world_rank_margin_bottom"
+                                android:background="@color/light_blue"
+                                android:id="@+id/toefl_data_line13"
+                                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8.5"
+                                    android:id="@+id/txtTOEFLSpeaking"
+                                    android:textSize="@dimen/course_information_subtitles_text_size"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/mid_gray" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/eng_req_exemptions"
+            android:id="@+id/btnengReqExemptions"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

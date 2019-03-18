@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="edu.freshfutures.seeka.FragmentProfileInterests"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/prof_interests_scrollview" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/interests_container">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_edu_tiltle_top_margin"
+                android:id="@+id/WhereToStudyLayout"
+                android:layout_marginBottom="@dimen/profile_edu_tiltle_top_margin">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prof_visit_title"
+                        android:id="@+id/profVisitTitle"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/profile_tile_text_size"
+                        android:layout_marginBottom="@dimen/profile_edu_title_bottom" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:paddingBottom="@dimen/shaded_padding_bottom"
+                    android:id="@+id/whereToContainer">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/curved_row_white_back"
+                        android:id="@+id/whereToStudyValues">
+
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/filter_add_button_margin_right"
+                            android:id="@+id/countryCitiesContainer">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lisProfCountriesList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/btnProfAddCountries" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnProfAddCountries"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/filter_add_button"
+                                android:contentDescription="@string/button_add_countries_description"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hobInterestLayout"
+                android:layout_marginBottom="@dimen/profile_edu_tiltle_top_margin">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_hobbies_interest_title"
+                        android:id="@+id/profhobInterestTitle"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/profile_tile_text_size"
+                        android:layout_marginBottom="@dimen/profile_edu_title_bottom" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:paddingBottom="@dimen/shaded_padding_bottom">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/filter_lvl_edu_background"
+                        android:id="@+id/hobInterestValues">
+
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/filter_add_button_margin_right">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lisProfHobbiesList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/btnProfAddHobInterest" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnProfAddHobInterest"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/filter_add_button"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="false"
+                                android:contentDescription="@string/button_add_countries_description" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CareerLayout"
+                android:layout_marginBottom="@dimen/profile_edu_tiltle_top_margin">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prof_career_title"
+                        android:id="@+id/profCareerTitle"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/profile_tile_text_size"
+                        android:layout_marginBottom="@dimen/profile_edu_title_bottom" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:paddingBottom="@dimen/shaded_padding_bottom">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/filter_lvl_edu_background"
+                        android:id="@+id/prof_career_container">
+
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/filter_add_button_margin_right"
+                            android:id="@+id/prof_career_values_body">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lisProfCareerList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/btnProfAddCareers" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnProfAddCareers"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/filter_add_button"
+                                android:scaleType="fitXY"
+                                android:layout_below="@+id/locationCountry"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="false"
+                                android:contentDescription="@string/button_add_countries_description" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="@dimen/profile_update_button_width"
+                android:layout_height="@dimen/profile_top_tab_layout_height"
+                android:text="@string/profile_update_button"
+                android:id="@+id/btnUpdateEdu"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_corners"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/profile_button_update_text_size"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/button_update_bottom_margin"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

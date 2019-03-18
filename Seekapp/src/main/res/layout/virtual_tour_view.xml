@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/VirtualTourContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    android:layout_gravity="center_horizontal"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:contentPadding="0dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vtourBody"
+            android:paddingTop="@dimen/course_info_section_container_padding"
+            android:paddingBottom="@dimen/course_containers_bottom_padding"
+            android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+            android:paddingRight="@dimen/course_info_containers_left_right_padding">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In case you want to explore the area, find out what&apos;s around"
+                android:id="@+id/textView38"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/course_info_section_title_text_size"
+                android:textColor="@color/dark_gray" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/course_info_btns_height"
+                android:text="@string/whats_around_the_university"
+                android:id="@+id/btnTripAdvisor"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/seeka_blue_button_back_thin"
+                android:layout_marginTop="@dimen/website_course_info_top_margin"
+                android:textStyle="normal"
+                android:textSize="@dimen/course_info_section_title_text_size"
+                android:textColor="@drawable/get_free_credits_background"
+                android:textAllCaps="false"
+                android:drawableLeft="@mipmap/trip_advisor_icon"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="@dimen/button_trip_advisor_margin_left_right"
+                android:layout_marginRight="@dimen/button_trip_advisor_margin_left_right" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/virtual_tour_container_height"
+            android:background="@drawable/curved_bottom_seeka_blue_background"
+            android:id="@+id/GoogleEarthContainer"
+            android:paddingTop="@dimen/course_info_section_container_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGoogleEarth"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/vitual_tour"
+                android:layout_marginBottom="@dimen/course_containers_bottom_padding" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="@dimen/google_earth_textview_width"
+                android:layout_height="wrap_content"
+                android:text="@string/google_earth_text"
+                android:id="@+id/textView40"
+                android:textSize="@dimen/uni_info_details_text_size"
+                android:textColor="@color/white_color"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/btnGoogleEarth"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

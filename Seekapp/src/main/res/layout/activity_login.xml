@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.LoginActivity"
+    android:background="@color/white_color">
+
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/login_form_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LoginForm"
+        android:layout_marginTop="@dimen/login_form_margin_top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/EmailForm"
+            android:paddingBottom="@dimen/edittext_form_padding_bottom">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/login_icon_width"
+                android:layout_height="@dimen/login_icon_height">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgEmail"
+                    android:contentDescription="@string/email_textbox_image"
+                    android:layout_weight="1"
+                    android:src="@mipmap/user_off"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTxtUsername"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/hint_username_text"
+                android:paddingLeft="@dimen/login_form_edittext_padding_left"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/mid_gray"
+                android:inputType="text"
+                android:textColorHint="@color/super_light_gray"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:text="tokmangseeka" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_form_underline_height"
+            android:background="@color/super_light_gray"
+            android:id="@+id/email_underline"
+            android:layout_marginBottom="@dimen/login_form_underline_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/PasswordForm"
+            android:paddingBottom="@dimen/edittext_form_padding_bottom">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/login_icon_width"
+                android:layout_height="@dimen/login_icon_height">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgPassword"
+                    android:contentDescription="@string/password_textbox_image"
+                    android:layout_weight="1"
+                    android:src="@mipmap/home_unlock_icon"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:imeActionId="@id/login"
+                android:imeActionLabel="@string/button_login_text"
+                android:imeOptions="actionUnspecified"
+                android:id="@+id/editTxtPassword"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/hint_password_text"
+                android:paddingLeft="@dimen/login_form_edittext_padding_left"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:singleLine="true"
+                android:textColor="@color/mid_gray"
+                android:textColorHint="@color/super_light_gray"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:text="toktok88" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_form_underline_height"
+            android:background="@color/super_light_gray"
+            android:id="@+id/password_underline"
+            android:layout_marginBottom="@dimen/login_form_underline_margin_bottom" />
+
+        <!-- hint-color:
+         underline-color: #ffffff-->
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_top_tab_layout_height"
+            android:text="@string/button_login_text"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_corners"
+            android:textSize="@dimen/profile_button_update_text_size"
+            android:layout_marginTop="@dimen/signup_button_margin_top"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="@dimen/welcome_backbutton_width"
+        android:layout_height="@dimen/welcome_backbutton_height"
+        android:id="@+id/btnBackArrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/home_back"
+        android:layout_marginLeft="@dimen/welcome_backbutton_left_margin"
+        android:layout_marginTop="@dimen/welcome_backbutton_top_margin"
+        android:contentDescription="@string/image_back_button_desc"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title_text"
+        android:id="@+id/LoginTitle"
+        android:textSize="@dimen/login_title_text_size"
+        android:textColor="@color/light_gray"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_top_tile_top_margin" />
+
+</RelativeLayout>

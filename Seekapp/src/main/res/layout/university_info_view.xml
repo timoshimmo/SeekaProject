@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/universityInfoContainer"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:contentPadding="0dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/universityInfoBody"
+            android:paddingTop="@dimen/course_info_section_container_padding"
+            android:paddingRight="@dimen/course_info_containers_left_right_padding"
+            android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+            android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uni_info_title"
+                android:id="@+id/txtUniTitle"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/course_info_section_title_text_size"
+                android:textColor="@color/pblue_color"
+                android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgUniOpenIcon"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/open_time_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/open_string"
+                        android:id="@+id/textView43"
+                        android:textSize="@dimen/uni_info_details_text_size"
+                        android:textColor="@color/dark_gray"
+                        android:layout_marginRight="@dimen/open_uni_text_margin_right"
+                        android:layout_marginLeft="@dimen/open_uni_text_margin_right" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgOpenIdicator"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/open_time_indicator_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:id="@+id/open_text_value_body">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00am - 11:00pm"
+                        android:id="@+id/txtOpenTime"
+                        android:textSize="@dimen/uni_info_details_text_size"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/phone_uni_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uni_info_phone_string"
+                        android:id="@+id/textView44"
+                        android:layout_marginLeft="@dimen/open_uni_text_margin_right"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/uni_info_details_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+60 162 591 546"
+                        android:id="@+id/txtUniInfoPhoneNo"
+                        android:textSize="@dimen/uni_info_details_text_size"
+                        android:textColor="@color/pblue_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgEmailUniInfo"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/email_uni_icon"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uni_info_email_string"
+                        android:id="@+id/textEmailUniInfoString"
+                        android:layout_marginLeft="@dimen/open_uni_text_margin_right"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/uni_info_details_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:id="@+id/email_uni_info">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="royalroads@canada.com"
+                        android:id="@+id/txtUniInfoEmail"
+                        android:textSize="@dimen/uni_info_details_text_size"
+                        android:textColor="@color/pblue_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgWebUniInfo"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/website_uni_icon"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uni_info_web_sting"
+                        android:id="@+id/textWebUniInfoString"
+                        android:layout_marginLeft="@dimen/open_uni_text_margin_right"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/uni_info_details_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:id="@+id/email_uni_info">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="royalroads.ca"
+                        android:id="@+id/txtUniInfoWebsite"
+                        android:textSize="@dimen/uni_info_details_text_size"
+                        android:textColor="@color/pblue_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/course_info_section_container_padding">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_string"
+                    android:id="@+id/textView45"
+                    android:textSize="@dimen/uni_info_details_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/course_info_world_rank_margin_bottom">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_students_string"
+                        android:id="@+id/textView47"
+                        android:textSize="@dimen/course_info_section_title_text_size"
+                        android:textColor="@color/dark_gray"
+                        android:layout_marginRight="@dimen/tot_stu_margin_right" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200 351"
+                        android:id="@+id/txtTotStudents"
+                        android:textSize="@dimen/course_info_section_title_text_size"
+                        android:textColor="@color/pblue_color" />
+                </LinearLayout>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/concordia_uni_info_string"
+                    android:id="@+id/textUniInfoAbout"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/uni_info_details_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:ellipsize="end"
+                    android:lines="10"
+                    android:maxLines="10" />
+
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="@dimen/course_info_buttons_width"
+                android:layout_height="@dimen/course_info_btns_height"
+                android:text="@string/button_read_more_string"
+                android:id="@+id/btnWebAboutUs"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/course_info_section_title_margin_bottom"
+                android:background="@drawable/seeka_blue_button_back_thin"
+                android:textStyle="normal"
+                android:textSize="@dimen/course_info_section_title_text_size"
+                android:textColor="@drawable/get_free_credits_background"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/goggle_earth_layout_height"
+            android:id="@+id/mapViewLayout"
+            android:background="@drawable/curved_bottom_seeka_blue_background">
+
+            <WebView android:id="@+id/uni_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/curved_bottom_seeka_blue_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="edu.freshfutures.seeka.WelcomeActivity"
+    android:background="@color/white_color"
+    android:id="@+id/welcome_container">
+
+    <ImageButton
+        android:layout_width="@dimen/welcome_backbutton_width"
+        android:layout_height="@dimen/welcome_backbutton_height"
+        android:id="@+id/btnBackArrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/home_back"
+        android:layout_marginLeft="@dimen/welcome_backbutton_left_margin"
+        android:layout_marginTop="@dimen/welcome_backbutton_top_margin"
+        android:contentDescription="@string/image_back_button_desc"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+        android:layout_width="@dimen/welcome_title_width"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title_text"
+        android:id="@+id/txtWelcomeTitle"
+        android:layout_below="@+id/btnBackArrow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/welcome_title_top_margin"
+        android:textColor="@color/pblue_color"
+        android:textSize="@dimen/welcome_title_text_size"
+        android:gravity="center_horizontal" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook_signup_notification_text"
+        android:id="@+id/txtFBLoginInfo"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/welcome_info_textsize"
+        android:layout_below="@+id/txtWelcomeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fb_text_signup_text_top_margin" />
+    <!--
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+     -->
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFBLoginInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/welcome_buttons_left_right_margin"
+        android:layout_marginLeft="@dimen/welcome_buttons_left_right_margin"
+        android:layout_marginTop="@dimen/fb_button_top_margin"
+        android:id="@+id/relativeLayout3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fb_button_height"
+            android:id="@+id/btnFacebook"
+            android:background="@drawable/facebook_button" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fb_button_inner_layout_left_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/fb_logo_width_height"
+                    android:layout_height="@dimen/fb_logo_width_height"
+                    android:id="@+id/imgFBLogo"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/welcome_fb_logo"
+                    android:contentDescription="@string/fb_logo_description" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facebook_button_text"
+                    android:id="@+id/txtFButton"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/imgFBLogo"
+                    android:layout_toEndOf="@+id/imgFBLogo"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/facebook_text_size"
+                    android:layout_marginLeft="@dimen/fb_button_text_left_margin" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_signup_login_info"
+        android:id="@+id/txtEmailinfo"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/email_info_top_margin"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/welcome_info_textsize"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fb_button_top_margin"
+        android:layout_marginLeft="@dimen/welcome_buttons_left_right_margin"
+        android:layout_marginRight="@dimen/welcome_buttons_left_right_margin">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+            android:layout_width="@dimen/signup_login_button_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/button_register_text"
+            android:id="@+id/btnRegisterRedirect"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@drawable/login_signup_textcolor"
+            android:background="@drawable/signup_login_button_background"
+            android:textAllCaps="false"/>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+            android:layout_width="@dimen/signup_login_button_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/button_login_text"
+            android:id="@+id/btnLoginRedirect"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:background="@drawable/signup_login_button_background"
+            android:textColor="@drawable/login_signup_textcolor"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/user_agreement_layout_margin_bottom"
+        android:id="@+id/userAgreementContainer">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_agreement_text"
+            android:id="@+id/txtUserAgreement"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/user_agreement_text_size" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clickable_user_agreement"
+            android:id="@+id/txtClickableAgreement"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/clickable_user_agreement_text_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

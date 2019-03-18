@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="@dimen/notification_text_width"
+                android:layout_height="wrap_content"
+                android:text="Study Library Support"
+                android:id="@+id/txtUnNotificationTitle"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/services_text_size"
+                android:maxLines="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:layout_marginRight="10dp"
+            android:id="@+id/NotifycheckBoxContainer">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:layout_width="@dimen/notification_checkbox_width_heigh"
+                        android:layout_height="@dimen/notification_checkbox_height"
+                        android:id="@+id/noticeMobileCheckbox"
+                        android:layout_gravity="top"
+                        android:checked="false"
+                        android:background="@drawable/notification_check_selector"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/notification_popup_mobile_width"
+                        android:layout_height="@dimen/notification_mobile_height"
+                        android:id="@+id/imgMobilelNotifyIcon"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/notification_mobile_icon"
+                        android:layout_marginTop="@dimen/notification_mobile_icon_top" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="0.5"
+                android:id="@+id/checkContainer"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="@dimen/notification_checkbox_width_heigh"
+                        android:layout_height="@dimen/notification_checkbox_height"
+                        android:id="@+id/emailNoticeCheckbox"
+                        android:layout_gravity="top"
+                        android:background="@drawable/notification_check_selector"
+                        android:button="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/notification_email_icon_width"
+                        android:layout_height="@dimen/notification_email_icon_height"
+                        android:id="@+id/imgEmailNotifyIcon"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/notifications_email_icon"
+                        android:layout_marginTop="@dimen/notification_email_icon_top" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

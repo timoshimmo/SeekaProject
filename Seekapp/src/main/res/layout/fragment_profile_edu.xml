@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/profile_edu_container">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_edu_tiltle_top_margin"
+                android:layout_marginBottom="@dimen/profile_edu_title_bottom">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aca_qua_title_text"
+                    android:id="@+id/textView8"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/profile_tile_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bottom_border"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="@dimen/profile_rows_margin_bottom">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:id="@+id/btnEduLevel">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/level_string_text"
+                            android:id="@+id/txtLevelString"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/dark_gray" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/profile_row_padding_right">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:id="@+id/txtUserEduLevel"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/mid_gray"
+                            android:textIsSelectable="false"
+                            android:gravity="right"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:ellipsize="end" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtEditedUserEduLevel"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/mid_gray"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:ellipsize="end" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/super_light_gray"
+                    android:id="@+id/profile_divider" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:id="@+id/btnEduOrigin">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_origin_string"
+                            android:id="@+id/txtOriginString"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/dark_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/profile_row_padding_right">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:id="@+id/txtUserOrigin"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/light_gray"
+                            android:gravity="right"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:ellipsize="end" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtEditedUserEduOrigin"
+                            android:textSize="@dimen/profile_details_text_size"
+                            android:textColor="@color/mid_gray"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:ellipsize="end" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_data_row_height"
+                android:background="@drawable/top_bottom_border"
+                android:layout_marginBottom="@dimen/profile_rows_margin_bottom"
+                android:baselineAligned="false"
+                android:id="@+id/btnEduSystem">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texxt_edu_system"
+                        android:id="@+id/txtEduSysString"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/profile_row_padding_right">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_no_data_entered"
+                        android:id="@+id/txtUserEduSystem"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:textColor="@color/light_gray"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:gravity="right"
+                        android:ellipsize="end" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtEditedUserEduSystem"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:textColor="@color/mid_gray"
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:ellipsize="end" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_data_row_height"
+                android:background="@drawable/top_bottom_border"
+                android:layout_marginBottom="@dimen/profile_rows_margin_bottom"
+                android:baselineAligned="false"
+                android:id="@+id/institutionLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_institution_string"
+                        android:id="@+id/txtInstitutionString"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:paddingRight="@dimen/profile_row_padding_right">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_no_data_entered"
+                        android:id="@+id/txtUserInstitution"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:textColor="@color/light_gray"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:gravity="right"
+                        android:ellipsize="end" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="12"
+                        android:id="@+id/txtUserInstitutionName"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:visibility="gone"
+                        android:background="@android:color/white"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/profile_details_text_size"
+                        android:hint="e.g Seeka High School"
+                        android:layout_alignParentBottom="false"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/profile_edu_tiltle_top_margin"
+                android:id="@+id/SPMGradesContainer"
+                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/SPMGradesTitle"
+                    android:id="@+id/CourseGradesList"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/profile_edu_title_bottom">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Course"
+                            android:id="@+id/textView57"
+                            android:textColor="@color/pblue_color"
+                            android:layout_weight="0.7"
+                            android:textSize="@dimen/courses_grades_list_title_text_size" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Grades"
+                            android:id="@+id/textView58"
+                            android:textColor="@color/pblue_color"
+                            android:layout_weight="0.3"
+                            android:textSize="@dimen/courses_grades_list_title_text_size"
+                            android:paddingLeft="@dimen/course_grades_title_padding_left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/search_result_margin_legt_right"
+                        android:background="@drawable/spm_grades_rounded_back">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/profile_data_row_height"
+                            android:id="@+id/CoureseGradesRow"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.68"
+                                android:gravity="center_vertical"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtCourseGradesValue1"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="E.g.: Physics"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_gray"
+                                android:id="@+id/ielts_data_line20" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txtGrade1"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="B"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/light_gray"
+                            android:id="@+id/grade_data_line31" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/profile_data_row_height"
+                            android:id="@+id/CoureseGradesRow"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.68"
+                                android:gravity="center_vertical"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtCourseGradesValue2"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="E.g.: Maths"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_gray"
+                                android:id="@+id/ielts_data_line20" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txtGrade2"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="B+"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/light_gray"
+                            android:id="@+id/ielts_data_line32" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/profile_data_row_height"
+                            android:id="@+id/CoureseGradesRow"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.68"
+                                android:gravity="center_vertical"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtCourseGradesValue3"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:hint="E.g.: Geography"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_gray"
+                                android:id="@+id/ielts_data_line20" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txtGrade3"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="A+"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/light_gray"
+                            android:id="@+id/ielts_data_line33" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/profile_data_row_height"
+                            android:id="@+id/CoureseGradesRow"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.68"
+                                android:gravity="center_vertical"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtCourseGradesValue4"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:hint="E.g.: English"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_gray"
+                                android:id="@+id/ielts_data_line20" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txtGrade4"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="A-"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/light_gray"
+                            android:id="@+id/ielts_data_line34" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/profile_data_row_height"
+                            android:id="@+id/CoureseGradesRow"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.68"
+                                android:gravity="center_vertical"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtCourseGradesValue5"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:hint="E.g.: Chemistry"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/light_gray"
+                                android:id="@+id/ielts_data_line20" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                                android:paddingRight="@dimen/search_result_margin_legt_right">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txtGrade5"
+                                    android:background="@android:color/white"
+                                    android:textSize="@dimen/profile_details_text_size"
+                                    android:hint="C"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/super_light_gray"
+                                    android:textColor="@color/mid_gray"
+                                    android:textCursorDrawable="@drawable/color_cursor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@color/light_gray"
+                            android:id="@+id/ielts_data_line35" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_grades_title"
+                    android:id="@+id/SPMGradesTitle"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/profile_details_text_size"
+                    android:layout_marginBottom="@dimen/profile_edu_title_bottom"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/spm_grades_value_body_width"
+                    android:layout_height="@dimen/profile_data_row_height"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/SingleGradesBody"
+                    android:background="@drawable/spm_grades_rounded_back"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:baselineAligned="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/SPMGradesTitle"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtSingleScore"
+                        android:textSize="@dimen/profile_tile_text_size"
+                        android:textColor="@color/dark_gray"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:hint="E.g.: 140"
+                        android:textColorHint="@color/super_light_gray"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                android:paddingRight="@dimen/search_result_margin_legt_right"
+                android:layout_marginBottom="@dimen/profile_edu_tiltle_top_margin">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculate_GPA_title"
+                    android:id="@+id/textView9"
+                    android:layout_marginBottom="@dimen/profile_edu_title_bottom"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/profile_tile_text_size" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:paddingBottom="@dimen/shaded_padding_bottom">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/curved_row_white_back"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@dimen/profile_container_padding_left_right"
+                        android:paddingRight="@dimen/profile_container_padding_left_right"
+                        android:paddingTop="@dimen/grades_converter_container_padding_top"
+                        android:paddingBottom="@dimen/gpa_grades_container_bottom_padding">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                            android:layout_width="@dimen/button_convert_grades_width"
+                            android:layout_height="@dimen/grade_converter_button_height"
+                            android:text="@string/btn_grade_converter_text"
+                            android:id="@+id/btnGradesConverter"
+                            android:textSize="@dimen/button_grades_converter_text_size"
+                            android:textColor="@drawable/login_signup_textcolor"
+                            android:background="@drawable/signup_login_button_background"
+                            android:textAllCaps="false"/>
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/grade_converter_text"
+                            android:id="@+id/txtGradeConeterInstructions"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/grades_converter_info_text_size"
+                            android:layout_marginTop="@dimen/convert_grades_info_text_top_margin"
+                            android:layout_marginBottom="@dimen/convert_grades_info_text_bottom_margin" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/GPATitleBody"
+                                android:gravity="center_vertical">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gpa_score_string"
+                                    android:id="@+id/txtGradeScoreText"
+                                    android:textColor="@color/mid_gray"
+                                    android:textSize="@dimen/button_grades_converter_text_size" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:paddingRight="20dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="@dimen/gpa_grade_container_width"
+                                    android:layout_height="@dimen/grade_converter_button_height"
+                                    android:layout_gravity="right"
+                                    android:background="@color/background_gray"
+                                    android:gravity="center_vertical">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomEditTextMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:id="@+id/convertedGPA"
+                                        android:background="@android:color/transparent"
+                                        android:textSize="@dimen/profile_tile_text_size"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/mid_gray"
+                                        android:gravity="center"
+                                        android:hint="3.00"
+                                        android:textColorHint="@color/super_light_gray"
+                                        android:textCursorDrawable="@drawable/color_cursor"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/search_result_margin_legt_right"
+                android:paddingRight="@dimen/search_result_margin_legt_right"
+                android:layout_marginBottom="@dimen/profile_update_button_margin_top">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eng_qua_title"
+                    android:id="@+id/txtEngQuaTitle"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/profile_tile_text_size"
+                    android:layout_marginBottom="@dimen/profile_edu_title_bottom" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unlocked_row_backgound"
+                    android:paddingBottom="@dimen/shaded_padding_bottom">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/filter_lvl_edu_background"
+                        android:paddingBottom="@dimen/eng_req_body_padding_bottom">
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/eng_qualification_title_container_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/english_prequsiste_text"
+                                android:id="@+id/textView10"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/grades_converter_info_text_size" />
+
+                            <CheckBox
+                                android:layout_width="@dimen/profile_checkbox_size"
+                                android:layout_height="@dimen/profile_checkbox_size"
+                                android:id="@+id/checkTaughtEnglish"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:background="@mipmap/checkbox_checked"
+                                android:button="@android:color/transparent"
+                                android:checked="true" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/english_taught_text"
+                                android:id="@+id/textView11"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView10"
+                                android:layout_toEndOf="@+id/textView10"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/grades_converter_info_text_size"
+                                android:layout_marginLeft="3dp" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/in_englis_text"
+                                android:id="@+id/textView12"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView11"
+                                android:layout_toEndOf="@+id/textView11"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/grades_converter_info_text_size"
+                                android:layout_marginLeft="3dp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/light_gray"
+                            android:id="@+id/eng_qua_question_underline" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:id="@+id/engReqGroup">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="IELTS"
+                                    android:id="@+id/rdBtnIELTS"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="@dimen/grades_converter_info_text_size"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/tick_check_selector"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:checked="false" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/ielts_underline" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="TOEFL"
+                                    android:id="@+id/rdBtnTOEFL"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="@dimen/grades_converter_info_text_size"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/tick_check_selector"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:checked="false" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/ielts_underline" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="No"
+                                    android:id="@+id/rdBtnNo"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="@dimen/grades_converter_info_text_size"
+                                    android:checked="true"
+                                    android:drawableRight="@drawable/tick_check_selector"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:button="@null"
+                                    android:contextClickable="false" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/engExamResultsBody"
+                            android:visibility="gone">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ielts_string"
+                                android:id="@+id/txtExamNameTitle"
+                                android:textSize="@dimen/grades_converter_info_text_size"
+                                android:textColor="@color/dark_gray"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/ielts_title_margin_bottom" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center_vertical|right">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/overall_string"
+                                        android:id="@+id/textOverall"
+                                        android:textColor="@color/dark_gray"
+                                        android:textSize="@dimen/button_grades_converter_text_size"
+                                        android:layout_marginRight="15dp" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.1"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line1"
+                                        android:layout_alignParentLeft="false"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_centerVertical="true" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line2"
+                                        android:layout_alignParentLeft="false"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_below="@+id/ielts_data_line1"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center_vertical">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="70dp"
+                                        android:layout_height="@dimen/grade_converter_button_height"
+                                        android:background="@drawable/spm_grades_value_back"
+                                        android:gravity="center_vertical"
+                                        android:layout_gravity="left"
+                                        android:layout_marginBottom="@dimen/eng_qua_overall_margin_bottom">
+
+
+                                        <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:id="@+id/editTextOverall"
+                                            android:background="@android:color/transparent"
+                                            android:textSize="@dimen/profile_tile_text_size"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="@color/light_gray"
+                                            android:gravity="center"
+                                            android:textCursorDrawable="@drawable/color_cursor"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="@dimen/eng_scores_horizontal_line_width"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/light_blue"
+                                    android:id="@+id/ielts_data_line3" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center_horizontal">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line4" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imgOverall1"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/english_reading"
+                                        android:layout_marginTop="@dimen/eng_test_scores_lines_top_bottom_margin"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line8"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="@dimen/eng_test_scores_text_box_width"
+                                        android:layout_height="@dimen/grade_converter_button_height"
+                                        android:background="@drawable/spm_grades_value_back"
+                                        android:gravity="center_vertical">
+
+
+                                        <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:id="@+id/editTextRead"
+                                            android:background="@android:color/transparent"
+                                            android:textSize="@dimen/profile_tile_text_size"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="@color/light_gray"
+                                            android:gravity="center"
+                                            android:textCursorDrawable="@drawable/color_cursor"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center_horizontal">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line5" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imgOverall2"
+                                        android:src="@mipmap/english_listening"
+                                        android:background="@android:color/transparent"
+                                        android:layout_marginTop="@dimen/eng_test_scores_lines_top_bottom_margin"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line11"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="@dimen/eng_test_scores_text_box_width"
+                                        android:layout_height="@dimen/grade_converter_button_height"
+                                        android:background="@drawable/spm_grades_value_back"
+                                        android:gravity="center_vertical">
+
+
+                                        <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:id="@+id/editTextListen"
+                                            android:background="@android:color/transparent"
+                                            android:textSize="@dimen/profile_tile_text_size"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="@color/light_gray"
+                                            android:gravity="center"
+                                            android:textCursorDrawable="@drawable/color_cursor"/>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center_horizontal">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line6" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imgOverall3"
+                                        android:src="@mipmap/english_writting"
+                                        android:background="@android:color/transparent"
+                                        android:layout_marginTop="@dimen/eng_test_scores_lines_top_bottom_margin"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line9"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="@dimen/eng_test_scores_text_box_width"
+                                        android:layout_height="@dimen/grade_converter_button_height"
+                                        android:background="@drawable/spm_grades_value_back"
+                                        android:gravity="center_vertical">
+
+
+                                        <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:id="@+id/editTextWrite"
+                                            android:background="@android:color/transparent"
+                                            android:textSize="@dimen/profile_tile_text_size"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="@color/light_gray"
+                                            android:gravity="center"
+                                            android:textCursorDrawable="@drawable/color_cursor"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center_horizontal">
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line7" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imgOverall4"
+                                        android:src="@mipmap/english_speaking"
+                                        android:background="@android:color/transparent"
+                                        android:layout_marginTop="@dimen/eng_test_scores_lines_top_bottom_margin"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="@dimen/eng_qua_test_type_arrow_down_height"
+                                        android:background="@color/light_blue"
+                                        android:id="@+id/ielts_data_line10"
+                                        android:layout_marginBottom="@dimen/eng_test_scores_lines_top_bottom_margin" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="@dimen/eng_test_scores_text_box_width"
+                                        android:layout_height="@dimen/grade_converter_button_height"
+                                        android:background="@drawable/spm_grades_value_back"
+                                        android:gravity="center_vertical">
+
+
+                                        <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:id="@+id/editTextSpeak"
+                                            android:background="@android:color/transparent"
+                                            android:textSize="@dimen/profile_tile_text_size"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="@color/light_gray"
+                                            android:gravity="center"
+                                            android:textCursorDrawable="@drawable/color_cursor"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="@dimen/profile_update_button_width"
+                android:layout_height="@dimen/profile_top_tab_layout_height"
+                android:text="@string/profile_update_button"
+                android:id="@+id/btnUpdateEdu"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_corners"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/profile_button_update_text_size"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/profile_rows_margin_bottom"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

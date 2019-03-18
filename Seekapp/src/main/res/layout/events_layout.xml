@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:id="@+id/seekafairLayout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventScrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imgSekkaFair"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/seeka_fair_image"
+                        android:scaleType="fitCenter" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/fair_descrition_padding_margin_space">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:id="@+id/textView20"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/desc_text_size"
+                        android:layout_marginBottom="@dimen/fair_descrition_padding_margin_space" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        android:id="@+id/txtFairDesc"
+                        android:textSize="@dimen/fair_description_text_size"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fair_details_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/fair_descrition_padding_margin_space"
+                    android:layout_marginLeft="@dimen/fair_details_left_right_margin"
+                    android:layout_marginRight="@dimen/fair_details_left_right_margin"
+                    android:background="@drawable/seeka_fair_info_background"
+                    android:paddingLeft="@dimen/fair_details_left_right_margin">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/institutions_articipating_fair"
+                            android:id="@+id/txtFairParticipating"
+                            android:textColor="@color/seeka_blue"
+                            android:textSize="20sp" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/country_of_institutions"
+                            android:id="@+id/txtFairCtryCourses"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgFairRightArrow"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/seeka_blue_right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fair_descrition_padding_margin_space"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dates_container">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue"
+                        android:id="@+id/textView20"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/desc_text_size"
+                        android:layout_marginBottom="@dimen/fair_descrition_padding_margin_space" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fair_date1"
+                        android:id="@+id/txtFairDate"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/fair_description_text_size" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fair_date2"
+                        android:id="@+id/txtFairDate2"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/fair_description_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imgSekkaFair"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/seeka_fair_image"
+                        android:scaleType="fitCenter" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/fair_descrition_padding_margin_space">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:id="@+id/textView20"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/desc_text_size"
+                        android:layout_marginBottom="@dimen/fair_descrition_padding_margin_space" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        android:id="@+id/txtFairDesc"
+                        android:textSize="@dimen/fair_description_text_size"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fair_details_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/fair_descrition_padding_margin_space"
+                    android:layout_marginLeft="@dimen/fair_details_left_right_margin"
+                    android:layout_marginRight="@dimen/fair_details_left_right_margin"
+                    android:background="@drawable/seeka_fair_info_background"
+                    android:paddingLeft="@dimen/fair_details_left_right_margin">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/institutions_articipating_fair"
+                            android:id="@+id/txtFairParticipating"
+                            android:textColor="@color/seeka_blue"
+                            android:textSize="20sp" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/country_of_institutions"
+                            android:id="@+id/txtFairCtryCourses"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgFairRightArrow"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/seeka_blue_right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fair_descrition_padding_margin_space"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dates_container">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue"
+                        android:id="@+id/textView20"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/desc_text_size"
+                        android:layout_marginBottom="@dimen/fair_descrition_padding_margin_space" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fair_date1"
+                        android:id="@+id/txtFairDate"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/fair_description_text_size" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fair_date2"
+                        android:id="@+id/txtFairDate2"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/fair_description_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

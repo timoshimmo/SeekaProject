@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_list_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/search_result_margin_legt_right"
+        android:paddingRight="@dimen/search_result_margin_legt_right">
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_settings_button_height"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/btnNotifiCancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/new_cancel_icon"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:id="@+id/txtFilterTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/home_bar_top_text_size" />
+
+        <ImageButton
+            android:layout_width="@dimen/home_bar_settings_button_confirm_width"
+            android:layout_height="@dimen/home_bar_settings_button_height"
+            android:id="@+id/btnNotifiConfirm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/correct" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/dark_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lisNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_list_horizontal_margin"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>

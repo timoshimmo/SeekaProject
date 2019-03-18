@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="155dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white_color"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.35"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:id="@+id/imgUniLogo"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/waterloo_uni_logo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.65">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:id="@+id/txtUniName"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/pblue_color"
+                android:lines="2"
+                android:textSize="@dimen/compare_details_text_size"
+                android:ellipsize="end"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:id="@+id/txtCourseTitleString"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/compare_details_text_size"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/txtUniName"
+                android:layout_marginTop="@dimen/compare_courses_course_title_margin_top"
+                android:layout_marginBottom="@dimen/compare_courses_course_title_margin_top" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCourseTitleString">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtCourse"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/compare_details_text_size"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_weight="0.8" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="bottom|right">
+
+                    <ImageButton
+                        android:layout_width="@dimen/compare_courses_delete_add_icon_size"
+                        android:layout_height="@dimen/compare_courses_delete_add_icon_size"
+                        android:id="@+id/btnRemoveCourse"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/filter_delete_button"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+ <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_title_divider_height"
+        android:background="@color/background_gray"
+        android:id="@+id/actionBar_underline" /> -->
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_data_row_height"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other_string"
+            android:id="@+id/radioCountry"
+            android:button="@null"
+            android:checked="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:textColor="@color/dark_gray"
+            android:drawableRight="@drawable/check_selector"
+            android:height="@dimen/profile_data_row_height"
+            android:paddingLeft="@dimen/settings_popup_margin_left"
+            android:paddingRight="@dimen/settings_popup_margin_left"
+            android:textSize="@dimen/settings_radio_options_text_size" />
+</LinearLayout>

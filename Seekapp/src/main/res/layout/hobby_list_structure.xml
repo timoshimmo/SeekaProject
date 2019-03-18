@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/sort_structure_row_height"
+    android:background="@android:color/transparent">
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+        android:layout_width="@dimen/interest_text_width"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/txtCourseName"
+        android:layout_centerVertical="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sort_list_structure_text_size"
+        android:layout_marginLeft="@dimen/sort_text_margin_left" />
+
+    <ImageButton
+        android:layout_width="@dimen/filter_year_down_arrow_width"
+        android:layout_height="@dimen/filter_year_down_arrow_height"
+        android:id="@+id/btnAddRemoveCourse"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="@dimen/sort_text_margin_left"
+        android:src="@mipmap/filter_add_button"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="edu.freshfutures.seeka.FragmentVisa"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+                android:paddingRight="@dimen/course_info_containers_left_right_padding">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visa Requirements &amp; Benefits"
+                    android:id="@+id/txtVisaInfoTitle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/course_info_section_title_margin_bottom"
+                    android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/pblue_color" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generally, a citizen of a foreign country who wishes to enter the United States must ﬁrst obtain a visa, either a nonimmigrant visa for temporary stay, or an immigrant visa for permanent residence. You must have a student visa to study in the United States. Your course of study and the type of school you plan to attend determine whether you need an F-1 visa or an M-1 visa."
+                    android:id="@+id/textView59"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/uni_info_details_text_size"
+                    android:textColor="@color/dark_gray" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                    android:layout_width="@dimen/course_info_buttons_width"
+                    android:layout_height="@dimen/course_info_btns_height"
+                    android:text="Apply For Assistance"
+                    android:id="@+id/button2"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/unlock_course_button_text_size"
+                    android:textColor="@drawable/get_free_credits_background"
+                    android:layout_marginTop="@dimen/website_course_info_top_margin"
+                    android:layout_marginBottom="@dimen/website_course_info_top_margin"
+                    android:textAllCaps="false"
+                    android:background="@drawable/seeka_blue_button_back_thin" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/super_light_gray"
+                android:id="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/website_course_info_top_margin" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+                android:paddingRight="@dimen/course_info_containers_left_right_padding">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post Study/Future Employment"
+                    android:id="@+id/txtVisaInfoSubTitle"
+                    android:textSize="@dimen/course_info_section_title_text_size"
+                    android:textColor="@color/pblue_color"
+                    android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generally, a citizen of a foreign country who wishes to enter the United States must ﬁrst obtain a visa, either a nonimmigrant visa for temporary stay, or an immigrant visa for permanent residence. You must have a student visa to study in the United States. Your course of study and the type of school you plan to attend determine whether you need an F-1 visa or an M-1 visa."
+                    android:id="@+id/textView61"
+                    android:textSize="@dimen/uni_info_details_text_size"
+                    android:textColor="@color/dark_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: net.pubnative:url_driller-1.2.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Seekapp/build/intermediates/exploded-aar/net.pubnative/url_driller/1.2.1/res" />
+      <root url="jar://$PROJECT_DIR$/Seekapp/build/intermediates/exploded-aar/net.pubnative/url_driller/1.2.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.pubnative/url_driller/1.2.1/7e57609dafdefaba7c451bc990e4e794bea10a12/url_driller-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_top"
+    android:paddingTop="@dimen/home_container_margin"
+    android:paddingLeft="@dimen/search_result_margin_legt_right"
+    android:paddingRight="@dimen/search_result_margin_legt_right">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/home_top_container"
+        android:layout_height="377dp"
+        android:background="@drawable/unlocked_row_backgound"
+        android:paddingBottom="2dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curved_seeka_blue_background"
+            android:gravity="center">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Ad Here"
+                android:id="@+id/textView14"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="65sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

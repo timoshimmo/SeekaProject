@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/visaContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/visaBody"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingTop="@dimen/course_info_section_container_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visa_string"
+            android:id="@+id/textVisaTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/pblue_color"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:layout_marginBottom="@dimen/course_info_section_title_margin_bottom" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generally, a citizen of a foreign country who wishes to enter the United States must ﬁrst obtain a visa, either a nonimmigrant visa for temporary stay, or an immigrant visa for permanent residence. You must have a student visa to study in the United States. Your course of study and the type of school you plan to attend determine whether you need an F-1 visa or an M-1 visa."
+            android:id="@+id/txtVisaInfo"
+            android:maxLines="10"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/uni_info_details_text_size"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/services_title_bottom_margin"
+            android:lines="10" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="@dimen/course_info_buttons_width"
+            android:layout_height="@dimen/course_info_btns_height"
+            android:text="@string/read_more_string"
+            android:id="@+id/btnReadMoreVisaInfo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/unlock_course_button_text_size"
+            android:textColor="@drawable/get_free_credits_background"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

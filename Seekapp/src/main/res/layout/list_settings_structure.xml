@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/menu_list_back">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_values_height_back">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/menu_image_margin_right"
+            android:layout_marginLeft="@dimen/menu_image_margin_left"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_container">
+
+            <ImageView
+                android:id="@+id/img_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/menu_images_res" />
+
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/bottom_line_container"
+            android:layout_toRightOf="@+id/img_container">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:id="@+id/value_container">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                    android:id="@+id/text_settings_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/list_settings_title"
+                    android:textColor="@color/mid_gray"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="1dp"
+                    android:textSize="@dimen/menu_value_text_size" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_value_divider_height"
+                android:background="@color/background_gray"
+                android:id="@+id/menu_bottom_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

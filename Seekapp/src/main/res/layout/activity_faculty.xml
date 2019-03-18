@@ -1,0 +1,805 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.FacultyActivity"
+    android:background="@color/background_gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/search_result_margin_legt_right"
+        android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/unlocked_row_backgound"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_lvl_edu_background">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faculty_table">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:id="@+id/btnAgric">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgAgric"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/agriculture_artboard" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agriculture_string"
+                            android:id="@+id/txtAgric"
+                            android:layout_below="@+id/imgAgric"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down1"
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.32">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:paddingTop="10dp"
+                            android:id="@+id/btnArchiBuilding">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgArchiBuilding"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/architecture_building_plan_artboard" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/archi_building_string"
+                                android:id="@+id/txtArchiBuilding"
+                                android:layout_below="@+id/imgArchiBuilding"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_gray"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/menu_title_divider_height"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/horizontal_divider_down2"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_left1"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_right1"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/btnAviation">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageBtnAviation"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/aviation_artboard"
+                            android:layout_centerHorizontal="true" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtAvaition"
+                            android:layout_below="@+id/imageBtnAviation"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/dark_gray"
+                            android:text="@string/aviation_string"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down3"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:id="@+id/btnBizFinAcc"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgBizFinAcc"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/business_finance_accounting_artboard" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/biz_fin_acc_string"
+                            android:id="@+id/txtBizFinAcc"
+                            android:layout_below="@+id/imgBizFinAcc"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down4"
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.32">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:paddingTop="10dp"
+                            android:id="@+id/btnCompSc">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCompSc"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/computer_science_artboard" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/comp_sc_string"
+                                android:id="@+id/txtCompSc"
+                                android:layout_below="@+id/imgCompSc"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_gray"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/menu_title_divider_height"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/horizontal_divider_down5"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_left2"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_right2"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/btnArtsDesign">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageBtnArtsDesign"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/creative_arts_design_artboard"
+                            android:layout_centerHorizontal="true" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtArtsDesign"
+                            android:layout_below="@+id/imageBtnArtsDesign"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/dark_gray"
+                            android:text="@string/creative_arts_string"
+                            android:textSize="13sp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down6"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:id="@+id/btnEducation"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgEducation"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/education_artboard" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/education_string"
+                            android:id="@+id/txtEducation"
+                            android:layout_below="@+id/imgEducation"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down7"
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.32">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:paddingTop="10dp"
+                            android:id="@+id/btnEngineering">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgEngineering"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/engineering_artboard" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/engineering_string"
+                                android:id="@+id/txtEngineering"
+                                android:layout_below="@+id/imgEngineering"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_gray"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/menu_title_divider_height"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/horizontal_divider_down8"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_left3"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_right3"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/btnHumanities">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageBtnHumanities"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/humanities_social_science_artboard_"
+                            android:layout_centerHorizontal="true" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtHumanities"
+                            android:layout_below="@+id/imageBtnHumanities"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/dark_gray"
+                            android:text="@string/humanities_social_sc"
+                            android:textSize="13sp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down9"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:id="@+id/btnLangLitereature"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgLiterature"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/language_literature_artboard" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/literature_string"
+                            android:id="@+id/txtLiterature"
+                            android:layout_below="@+id/imgLiterature"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down10"
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.32">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:paddingTop="10dp"
+                            android:id="@+id/btnLaw">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgLaw"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/law_artboard" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/law_string"
+                                android:id="@+id/txtLaw"
+                                android:layout_below="@+id/imgLaw"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_gray"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/menu_title_divider_height"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/horizontal_divider_down11"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_left4"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_right4"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/btnMassComm">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgMassComm"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/mass_communication_media_artboard"
+                            android:layout_centerHorizontal="true" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtMassComm"
+                            android:layout_below="@+id/imgMassComm"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/dark_gray"
+                            android:text="@string/mass_comm_media"
+                            android:textSize="13sp"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menu_title_divider_height"
+                            android:background="@color/dark_gray"
+                            android:id="@+id/horizontal_divider_down12"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:id="@+id/btnMedNursing"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgMedNursing"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/medical_nursing_artboard" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/med_nursing_string"
+                            android:id="@+id/txtMedNursing"
+                            android:layout_below="@+id/imgMedNursing"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.32">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:paddingTop="10dp"
+                            android:id="@+id/btnHealthSc">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgHealthSc"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/science_health_science_artboard" />
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/health_science_string"
+                                android:id="@+id/txtHealthSc"
+                                android:layout_below="@+id/imgHealthSc"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="13sp"
+                                android:textColor="@color/dark_gray"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_left5"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="10dp" />
+
+                            <View
+                                android:layout_width="@dimen/menu_title_divider_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/dark_gray"
+                                android:id="@+id/vertical_divider_right5"
+                                android:layout_weight="0.005"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.3"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/btnHotelMngmnt">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgHotelMngmt"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/tourism_hotel_management_artboard"
+                            android:layout_centerHorizontal="true" />
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtHotelMngmnt"
+                            android:layout_below="@+id/imgHotelMngmt"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/dark_gray"
+                            android:text="@string/tourism_string"
+                            android:textSize="13sp"
+                            android:gravity="center_horizontal" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

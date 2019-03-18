@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/interestsContainer"
+    android:layout_marginBottom="@dimen/course_info_content_bottom"
+    app:cardCornerRadius="4.5dp"
+    app:cardBackgroundColor="@color/seeka_blue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/interestsBody"
+        android:paddingLeft="@dimen/course_info_containers_left_right_padding"
+        android:paddingRight="@dimen/course_info_containers_left_right_padding"
+        android:paddingBottom="@dimen/course_containers_bottom_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView9"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/course_info_interest_heart"
+            android:layout_marginTop="@dimen/website_course_info_top_margin"
+            android:layout_marginBottom="@dimen/website_course_info_top_margin" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matches "
+                android:id="@+id/textView37"
+                android:textSize="@dimen/course_info_section_title_text_size"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="2dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:id="@+id/txtPercentageMatch"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="2dp"
+                android:textSize="@dimen/course_info_section_title_text_size" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" of your interests"
+                android:id="@+id/textView39"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/course_info_section_title_text_size" />
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_display_all_interets"
+            android:id="@+id/txtDisplayInterests"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/seeka_blue_button_back_thin"
+            android:textStyle="normal"
+            android:textSize="@dimen/course_info_section_title_text_size"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

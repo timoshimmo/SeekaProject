@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sort_popup_background"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/listBody"
+        android:layout_centerVertical="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_list_height"
+            android:id="@+id/lisSortPopup"
+            android:layout_gravity="center_horizontal"
+            android:divider="@color/background_gray"
+            android:dividerHeight="0.5dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/sort_list_margin_top" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_button_height"
+            android:text="@string/sort_confirm"
+            android:id="@+id/btnSortConfirm"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_corners"
+            android:textSize="@dimen/sort_btn_confirm_text_size"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/spons_pre_margin_right"
+            android:layout_marginRight="@dimen/spons_pre_margin_right"
+            android:layout_below="@+id/lisSortPopup"
+            android:layout_marginBottom="@dimen/spons_pre_margin_right"
+            android:textColor="@color/white_color"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_sort_toolbar_height"
+        android:background="@color/white_color"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar">
+
+        <ImageButton
+            android:layout_width="@dimen/unlocked_email_cancel_width"
+            android:layout_height="@dimen/unlocked_email_cancel_width"
+            android:id="@+id/imgSortCancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/new_cancel_icon"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="Sort Popup Cancel Button" />
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_popup_title"
+            android:id="@+id/txtPopupTitle"
+            android:textColor="@color/mid_gray"
+            android:textSize="@dimen/home_bar_top_text_size"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

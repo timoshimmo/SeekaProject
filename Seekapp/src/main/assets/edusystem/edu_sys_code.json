@@ -1,0 +1,1830 @@
+ [
+  {
+  "sys_edu_txt" : "A LEVEL",
+  "sys_edu_code" : "GLOB_A_LEV",
+  "country_code" : "00",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "O LEVEL",
+  "sys_edu_code" : "GLOBE_O_LEV",
+  "country_code" : "00",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "GAOKAO",
+  "sys_edu_code" : "CHINA_GAOKAO_Gao_San",
+  "country_code" : "CN",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "GAO ER",
+  "sys_edu_code" : "CHINA_GAO_ER",
+  "country_code" : "CN",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "STPM",
+  "sys_edu_code" : "MAL_STPM",
+  "country_code" : "MY",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "SPM",
+  "sys_edu_code" : "MAL_SPM",
+  "country_code" : "MY",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "A LEVEL",
+  "sys_edu_code" : "SGP_A_LEVE",
+  "country_code" : "SG",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "O LEVEL",
+  "sys_edu_code" : "SGP_O_LEV",
+  "country_code" : "SG",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "IB",
+  "sys_edu_code" : "GLOB_IB",
+  "country_code" : "00",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "Mathayom Suksa 6",
+  "sys_edu_code" : "THA_MathayomSuksa_5_6",
+  "country_code" : "TH",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "SMU",
+  "sys_edu_code" : "INDO_SMU",
+  "country_code" : "ID",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "Kotogakko Sotsugyo Shomeisho",
+  "sys_edu_code" : "JAPAN_KSS",
+  "country_code" : "JP",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "A LEVEL",
+  "sys_edu_code" : "SRI_A_LEV",
+  "country_code" : "LK",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "First Year (University)",
+  "sys_edu_code" : "GLOB_FIRST_YEAR",
+  "country_code" : "00",
+  "level_of_education" : "First Year (University)"
+  },
+  {
+  "sys_edu_txt" : "Second Year (University)",
+  "sys_edu_code" : "GLOB_SECOND_YEAR",
+  "country_code" : "00",
+  "level_of_education" : "Second Year (University)"
+  },
+  {
+  "sys_edu_txt" : "Degree",
+  "sys_edu_code" : "GLOB_DEGREE",
+  "country_code" : "00",
+  "level_of_education" : "Degree"
+  },
+  {
+  "sys_edu_txt" : "Diploma",
+  "sys_edu_code" : "GLOB_DIPLOMA",
+  "country_code" : "00",
+  "level_of_education" : "Diploma"
+  },
+  {
+  "sys_edu_txt" : "GPA",
+  "sys_edu_code" : "GLOB_GPA",
+  "country_code" : "00",
+  "level_of_education" : "GPA"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "IND_HSC_ISC_SSC",
+  "country_code" : "IN",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "GPA",
+  "sys_edu_code" : "US_GPA",
+  "country_code" : "US",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "NEP_HSC",
+  "country_code" : "NP",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "PAK_HSC",
+  "country_code" : "PK",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "KSA_DM_HSC",
+  "country_code" : "SA",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "UAE_REG_DM_HSC",
+  "country_code" : "AE",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "SAT",
+  "sys_edu_code" : "SAT_USA",
+  "country_code" : "US",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "PHILIP_HSC",
+  "country_code" : "PH",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "BAN_HSC",
+  "country_code" : "BD",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "HSC",
+  "sys_edu_code" : "IRAN_DM_HSC",
+  "country_code" : "IR",
+  "level_of_education" : "High School"
+  },
+  {
+  "sys_edu_txt" : "A LEVEL",
+  "sys_edu_code" : "UK_A_LEV",
+  "country_code" : "UK",
+  "level_of_education" : "High School"
+  }
+  ,
+  {
+  "sys_edu_code": "Glob_A_Lev_O_Lev",
+  "country_code": "00",
+  "sys_edu_txt": "A/O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  
+  {
+  "sys_edu_code": "BR_CCEM",
+  "country_code": "BR",
+  "sys_edu_txt": "Certificado de Conclusão de Ensino Médio",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "NG_A_Lev",
+  "country_code": "NG",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "NG_O_Lev",
+  "country_code": "NG",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  
+  
+  {
+  "sys_edu_code": "RU_HSC",
+  "country_code": "RU",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MX_Bach",
+  "country_code": "MX",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "VN_BTNTHPT",
+  "country_code": "VN",
+  "sys_edu_txt": "Bằng Tốt Nghiệp Trung Học Phổ Thông",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "ET_ESLC",
+  "country_code": "ET",
+  "sys_edu_txt": "Ethiopian School Leaving Certificate",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "EG_TA",
+  "country_code": "EG",
+  "sys_edu_txt": "Thanaweya a`Amma ",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "DE_Abitur",
+  "country_code": "DE",
+  "sys_edu_txt": "Abitur",
+  "level_of_education" : "High School"
+  },
+  
+  
+  {
+  "sys_edu_code": "CD_Bacc",
+  "country_code": "CD",
+  "sys_edu_txt": "Baccalauréat",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TR_DLDLBD",
+  "country_code": "TR",
+  "sys_edu_txt": "Devlet Lise Diplomasi/ Lise Bitirme Diplomasi",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FR_HSC",
+  "country_code": "FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "UK_A_Lev_O_Lev",
+  "country_code": "UK",
+  "sys_edu_txt": "A/O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "ZA_NSC",
+  "country_code": "ZA",
+  "sys_edu_txt": "NSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MM_HSC",
+  "country_code": "MM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TZ_HSC",
+  "country_code": "TZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "KR_HSC",
+  "country_code": "KR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CO_Bach",
+  "country_code": "CO",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "ES_TB",
+  "country_code": "ES",
+  "sys_edu_txt": "Título de Bachiller",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "KE_HSC",
+  "country_code": "KE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AR_Bach",
+  "country_code": "AR",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "UA_HSC",
+  "country_code": "UA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "DZ_HSC",
+  "country_code": "DZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PL_HSC",
+  "country_code": "PL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SD_HSC",
+  "country_code": "SD",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IQ_HSC",
+  "country_code": "IQ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CA_HSC",
+  "country_code": "CA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "UG_HSC",
+  "country_code": "UG",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MA_HSC",
+  "country_code": "MA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PE_HSC",
+  "country_code": "PE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "UZ_HSC",
+  "country_code": "UZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "VE_HSC",
+  "country_code": "VE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GH_HSC",
+  "country_code": "GH",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AF_HSC",
+  "country_code": "AF",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "YE_HSC",
+  "country_code": "YE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MZ_HSC",
+  "country_code": "MZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "KP_HSC",
+  "country_code": "KP",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AO_HSC",
+  "country_code": "AO",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AU_HSC",
+  "country_code": "AU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TW_HSC",
+  "country_code": "TW",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CM_HSC",
+  "country_code": "CM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SY_HSC",
+  "country_code": "SY",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CI_HSC",
+  "country_code": "CI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MG_HSC",
+  "country_code": "MG",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  
+  {
+  "sys_edu_code": "RO_HSC",
+  "country_code": "RO",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NE_HSC",
+  "country_code": "NE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BF_HSC",
+  "country_code": "BF",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CL_HSC",
+  "country_code": "CL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ML_HSC",
+  "country_code": "ML",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KZ_HSC",
+  "country_code": "KZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NL_HSC",
+  "country_code": "NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MW_HSC",
+  "country_code": "MW",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "GT_HSC",
+  "country_code": "GT",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "EC_HSC",
+  "country_code": "EC",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ZM_HSC",
+  "country_code": "ZM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KH_HSC",
+  "country_code": "KH",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TD_HSC",
+  "country_code": "TD",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SN_HSC",
+  "country_code": "SN",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ZW_HSC",
+  "country_code": "ZW",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SS_HSC",
+  "country_code": "SS",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BO_HSC",
+  "country_code": "BO",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "RW_HSC",
+  "country_code": "RW",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BE_HSC",
+  "country_code": "BE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CU_HSC",
+  "country_code": "CU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TN_HSC",
+  "country_code": "TN",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "HT_HSC",
+  "country_code": "HT",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "GR_HSC",
+  "country_code": "GR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SO_HSC",
+  "country_code": "SO",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "GN_HSC",
+  "country_code": "GN",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CZ_MZ",
+  "country_code": "CZ",
+  "sys_edu_txt": "Maturitni Zkouska",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "DO_Bach",
+  "country_code": "DO",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PT_CFES",
+  "country_code": "PT",
+  "sys_edu_txt": "Certifico de fim de Estudos Secundarios",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BJ_HSC",
+  "country_code": "BJ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "HU_Erettsegi",
+  "country_code": "HU",
+  "sys_edu_txt": "Érettségi",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BI_DHCHAS",
+  "country_code": "BI",
+  "sys_edu_txt": "Diplôme des Humanités Completes with high academic standing",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SE_ASFG",
+  "country_code": "SE",
+  "sys_edu_txt": "Avgangsbetyg / Slutbetyg Från Gymnasieskola",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AZ_CSE",
+  "country_code": "AZ",
+  "sys_edu_txt": "Certificate of Secondary Education",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BY_DSSO",
+  "country_code": "BY",
+  "sys_edu_txt": "Diplom o Srednem Spetsialnom Obrazovanii ",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "HN_HSC",
+  "country_code": "HN",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "AT_RM",
+  "country_code": "AT",
+  "sys_edu_txt": "Reifeprufungszeugnis (Matura)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IL_BM",
+  "country_code": "IL",
+  "sys_edu_txt": "Bagrut/Mechina",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TJ_ASO",
+  "country_code": "TJ",
+  "sys_edu_txt": "Attestat o Srednem Obrazovanii",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SZ_Matu",
+  "country_code": "SZ",
+  "sys_edu_txt": "Maturitätszeugnis",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PG_HSC",
+  "country_code": "PG",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "HK_A_Lev",
+  "country_code": "HK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "HK_O_Lev",
+  "country_code": "HK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BG_DZSO",
+  "country_code": "BG",
+  "sys_edu_txt": "Diploma za Zavarsheno Sredno Obrazovanie",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "RS_HSC",
+  "country_code": "RS",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "PY_HSC",
+  "country_code": "PY",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "LA_HSC",
+  "country_code": "LA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "JO_Tawjihi",
+  "country_code": "JO",
+  "sys_edu_txt": "Tawjihi",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SL_SSCE",
+  "country_code": "SL",
+  "sys_edu_txt": "SSCE",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SV_Bach",
+  "country_code": "SV",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "LY_HSC",
+  "country_code": "LY",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NI_Bach",
+  "country_code": "NI",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "DK_SHFHTE",
+  "country_code": "DK",
+  "sys_edu_txt": "Studentereksamen or Højere Forberedelseksamen or Højere Teknisk Eksamen",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FI_YS",
+  "country_code": "FI",
+  "sys_edu_txt": "Ylioppilastutkintoto / Studentexamensbetg",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SK_HSC",
+  "country_code": "SK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ER_HSC",
+  "country_code": "ER",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NO_VFVS",
+  "country_code": "NO",
+  "sys_edu_txt": "Vitnemal Fra den Videregaende Skole",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CF_HSC",
+  "country_code": "CF",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CR_HSC",
+  "country_code": "CR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TM_HSC",
+  "country_code": "TM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "PS_HSC",
+  "country_code": "PS",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CG_BACC",
+  "country_code": "CG",
+  "sys_edu_txt": "Baccalauréat",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IE_A_Lev",
+  "country_code": "IE",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IE_O_Lev",
+  "country_code": "IE",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "NZ_NCEA",
+  "country_code": "NZ",
+  "sys_edu_txt": "NCEA",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "LR_HSC",
+  "country_code": "LR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "HR_SZISM",
+  "country_code": "HR",
+  "sys_edu_txt": "Svjedodzba o Zavrsnom Ispitu, Svjedodžba o mature",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "OM_TAGSEC",
+  "country_code": "OM",
+  "sys_edu_txt": "Thanawiya Amma / General Secondary Education Certificate",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "LB_BG",
+  "country_code": "LB",
+  "sys_edu_txt": "Baccalauréat Général",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BA_SSZO",
+  "country_code": "BA",
+  "sys_edu_txt": "Svjedoanstvo svjedodzba o zavrsenom obrazovanju",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PA_Bach",
+  "country_code": "PA",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GE_SS",
+  "country_code": "GE",
+  "sys_edu_txt": "Sashualo Skolis",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MR_BDBlEdSDHAS",
+  "country_code": "MR",
+  "sys_edu_txt": "Baccalauréat / Diplôme de Bachelier de l’Enseignement du Second Degré with high academic standing",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MD_DB_HSC",
+  "country_code": "MD",
+  "sys_edu_txt": "Diploma de Bacalauréat/HSC",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PR_US_HSC",
+  "country_code": "PR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "UY_Bach",
+  "country_code": "UY",
+  "sys_edu_txt": "Bachillerato",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "KW_SATAA",
+  "country_code": "KW",
+  "sys_edu_txt": "Shahadat Al-Thanawiya-Al-A'ama",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MN_Gerchilgee",
+  "country_code": "MN",
+  "sys_edu_txt": "Gerchilgee",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AM_MYKA",
+  "country_code": "AM",
+  "sys_edu_txt": "Mijnakarg Yndanur Krtoutian Attestat",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "LT_BAAMC",
+  "country_code": "LT",
+  "sys_edu_txt": "Brandos Atestatas (academic) / Maturity Certificate",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AL_DPCM",
+  "country_code": "AL",
+  "sys_edu_txt": "Dëftesë Pjekurie (Certificate of Maturity)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "JM_HSC",
+  "country_code": "JM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NA_HSC",
+  "country_code": "NA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BW_GCE",
+  "country_code": "BW",
+  "sys_edu_txt": "GCE",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "LS_HSC",
+  "country_code": "LS",
+  "sys_edu_txt": "BW",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "QA_DM_HSC",
+  "country_code": "QA",
+  "sys_edu_txt": "Diplom-Metevaseth (HSC)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SI_HSC",
+  "country_code": "SI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MK_HSC",
+  "country_code": "MK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "LV_APVVI",
+  "country_code": "LV",
+  "sys_edu_txt": "Atestāts par Vispārējo Vidējo Izglītību",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GM_HSC",
+  "country_code": "GM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "GW_HSC",
+  "country_code": "GW",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "Kosovo_HSC",
+  "country_code": "Kosovo",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "GA_Bacc",
+  "country_code": "GA",
+  "sys_edu_txt": "Baccalauréat",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GQ_HSC",
+  "country_code": "GQ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BH_TBSSLC",
+  "country_code": "BH",
+  "sys_edu_txt": "Tawjihiya/ Bahrain Secondary School Leaving Certificate",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TT_CEC_or_CAPE",
+  "country_code": "TT",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "EE_HSC",
+  "country_code": "EE",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MU_HSC",
+  "country_code": "MU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TL_HSC",
+  "country_code": "TL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CH_HSC",
+  "country_code": "CH",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "DJ_BG_or_BT",
+  "country_code": "DJ",
+  "sys_edu_txt": "Baccalaureat Général or Baccalaureat Technologique",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FJ_Form_7",
+  "country_code": "FJ",
+  "sys_edu_txt": "Form 7",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CY_ALDLD",
+  "country_code": "CY",
+  "sys_edu_txt": "Apolytirion of Lykeion or Devlet Lise Diplomasi ",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "RE_FR_HSC",
+  "country_code": "RE_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KM_HSC",
+  "country_code": "KM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BT_SCC_XII",
+  "country_code": "BT",
+  "sys_edu_txt": "School Certificate (Class XII)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GY_HSC",
+  "country_code": "GY",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MO_CN_HSC",
+  "country_code": "MO_CN",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ME_HSC",
+  "country_code": "ME",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SB_HSC",
+  "country_code": "SB",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "LU_DFES",
+  "country_code": "LU",
+  "sys_edu_txt": "Diplom de Fin d’Etudes Secondaires",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SR_HSC",
+  "country_code": "SR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CV_HSC",
+  "country_code": "CV",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "WS_HSC",
+  "country_code": "WS",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TA_HSC",
+  "country_code": "TA",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MT_MAM_Lev",
+  "country_code": "MT",
+  "sys_edu_txt": "Malta Advanced Matriculation (AM) Level",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GU_FR_HSC",
+  "country_code": "GU_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BN_Mat",
+  "country_code": "BN",
+  "sys_edu_txt": "Brunei Matriculation"
+  },
+  
+  {
+  "sys_edu_code": "MI_FR_HSC",
+  "country_code": "MI_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BS_GCE",
+  "country_code": "BS",
+  "sys_edu_txt": "General Certificate of Education (GCE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BZ_HSC",
+  "country_code": "BZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MV_HSC",
+  "country_code": "MV",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "IS_SP",
+  "country_code": "IS",
+  "sys_edu_txt": "Stúdentspróf",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "NCY_HSC",
+  "country_code": "NCY",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BB_HSC",
+  "country_code": "BB",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NC_FR_HSC",
+  "country_code": "NC_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "FP_FR_HSC",
+  "country_code": "FP_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "VU_HSC",
+  "country_code": "VU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "AB_HSC",
+  "country_code": "AB",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "FG_FR_HSC",
+  "country_code": "FG_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MF_FR_HSC",
+  "country_code": "MF_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ST_HSC",
+  "country_code": "ST",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "LC_CXC_or_CAPE",
+  "country_code": "LC",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GU_US_HSC",
+  "country_code": "GU_US",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CU_NL_HSC",
+  "country_code": "CU_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NK_HSC",
+  "country_code": "NK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SV_CXC_or_CAPE",
+  "country_code": "SV",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AR_NL_HSC",
+  "country_code": "AR_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KI_HSC",
+  "country_code": "KI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "US_VG_GPA",
+  "country_code": "US_VG",
+  "sys_edu_txt": "GPA",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GD_HSC",
+  "country_code": "GD",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TG_HSC",
+  "country_code": "TG",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MI_HSC",
+  "country_code": "MI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "JE_UK_A_Lev",
+  "country_code": "JE_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "JE_UK_O_Lev",
+  "country_code": "JE_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SC_GCE",
+  "country_code": "SC",
+  "sys_edu_txt": "General Certificate of Education (GCE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AG_CXC_or_CAPE",
+  "country_code": "AG",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IM_UK_A_Lev",
+  "country_code": "IM_UK",
+  "sys_edu_txt": "A Level",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "IM_UK_O_Lev",
+  "country_code": "IM_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "CE_ES_HSC",
+  "country_code": "CE_ES",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "ME_ES_HSC",
+  "country_code": "ME_ES",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "AD_HSC",
+  "country_code": "AD",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "DM_CXC_or_CAPE",
+  "country_code": "DM",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GU_UK_A_Lev",
+  "country_code": "GU_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GU_UK_O_Lev",
+  "country_code": "GU_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BM_UK_A_Lev",
+  "country_code": "BM_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "BM_UK_O_Lev",
+  "country_code": "BM_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MH_HSC",
+  "country_code": "MH",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KN_CXC_or_CAPE",
+  "country_code": "KN",
+  "sys_edu_txt": "Caribbean Examinations Council (CXC) or (CAPE)",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GR_DK_HSC",
+  "country_code": "GR_DK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KY_UK_A_Lev",
+  "country_code": "KY_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "KY_UK_O_Lev",
+  "country_code": "KY_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AS_US_GPA",
+  "country_code": "AS_US",
+  "sys_edu_txt": "GPA",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MI_US_GPA",
+  "country_code": "MI_US",
+  "sys_edu_txt": "GPA",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FI_DK_HSC",
+  "country_code": "FI_DK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MA_NL_HSC",
+  "country_code": "MA_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "LI_HSC",
+  "country_code": "LI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MC_HSC",
+  "country_code": "MC",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "MA_FR_HSC",
+  "country_code": "MA_FR ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SM_HSC",
+  "country_code": "SM",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TC_UK_A_Lev",
+  "country_code": "TC_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "TC_UK_O_Lev",
+  "country_code": "TC_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GI_UK_A_Lev",
+  "country_code": "GI_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "GI_UK_O_Lev",
+  "country_code": "GI_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AL_FI_HSC",
+  "country_code": "AL_FI",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "VG_UK_A_Lev",
+  "country_code": "VG_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "VG_UK_O_Lev",
+  "country_code": "VG_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PU_HSC",
+  "country_code": "PU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BO_NL_HSC",
+  "country_code": "BO_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "KG_HSC",
+  "country_code": "KG",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CK_HSC",
+  "country_code": "CK",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "AI_UK_A_Lev",
+  "country_code": "AI_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AI_UK_O_Lev",
+  "country_code": "AI_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "WF_FR_HSC",
+  "country_code": "WF_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TV_HSC",
+  "country_code": "TV",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NR_HSC",
+  "country_code": "NR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "BA_FR_HSC",
+  "country_code": "BA_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "PM_FR_DI_or_Bach",
+  "country_code": "PM_FR",
+  "sys_edu_txt": "Diplôme de Bachelier de l’Enseignement du Second Degre",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MS_UK_A_Lev",
+  "country_code": "MS_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MS_UK_O_Lev",
+  "country_code": "MS_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "EU_NL_HSC",
+  "country_code": "EU_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "HT_UK_A_Lev",
+  "country_code": "HT_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "HT_UK_O_Lev",
+  "country_code": "HT_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FI_UK_A_Lev",
+  "country_code": "FI_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "FI_UK_O_Lev",
+  "country_code": "FI_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "SJ_NO_HSC",
+  "country_code": "SJ_NO",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NI_AU_HSC",
+  "country_code": "NI_AU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CI_AU_HSC",
+  "country_code": "CI_AU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "SB_NL_HSC",
+  "country_code": "SB_NL",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "NU_HSC",
+  "country_code": "NU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "TK_NZ_HSC",
+  "country_code": "TK_NZ",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "VC_HSC",
+  "country_code": "VC",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "CK_AU_HSC",
+  "country_code": "CK_AU",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "WI_US_GPA",
+  "country_code": "WI_US",
+  "sys_edu_txt": "GPA",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "AL_FR_HSC",
+  "country_code": "AL_FR",
+  "sys_edu_txt": "HSC",
+  "level_of_education" : "High School"
+  },  
+  {
+  "sys_edu_code": "PI_UK_A_Lev",
+  "country_code": "PI_UK",
+  "sys_edu_txt": "A LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "PI_UK_O_Lev",
+  "country_code": "PI_UK",
+  "sys_edu_txt": "O LEVEL",
+  "level_of_education" : "High School"
+  },
+  
+  {
+  "sys_edu_code": "MA_US_GPA",
+  "country_code": "MA_US",
+  "sys_edu_txt": "GPA",
+  "level_of_education" : "High School"
+  }
+  ]

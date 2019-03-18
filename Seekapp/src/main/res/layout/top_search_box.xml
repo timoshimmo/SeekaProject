@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_top_search_body"
+        android:paddingLeft="@dimen/search_result_margin_legt_right"
+        android:paddingRight="@dimen/search_result_margin_legt_right"
+        android:paddingTop="@dimen/search_result_margin_legt_right"
+        android:fitsSystemWindows="true">
+
+        <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filter_course_search_bar_height"
+            android:background="@drawable/unlocked_row_backgound"
+            android:paddingBottom="2dp"
+            android:id="@+id/btnSearchWorld">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/filter_lvl_edu_background"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomEditTextRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editSearchCourses"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/search_box_text_hint"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/super_light_gray"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/color_cursor"/>
+
+            </RelativeLayout>
+        </RelativeLayout>  -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_lvl_edu_background"
+            android:layout_marginTop="67.5dp"
+            android:id="@+id/destLvlBody">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_course_search_bar_height"
+                android:id="@+id/selectDestBody"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/top_curve_select_button"
+                android:gravity="center">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_destination_string"
+                    android:id="@+id/selectDestTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/top_search_options_text_size"
+                    android:textColor="@color/dark_gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgDestinationNext"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:adjustViewBounds="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/fake_filter_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/background_gray"
+                android:id="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_course_search_bar_height"
+                android:id="@+id/selectLvlBody"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/bottom_curve_select_click"
+                android:gravity="center">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_level_string"
+                    android:id="@+id/selectIdTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/top_search_options_text_size"
+                    android:textColor="@color/dark_gray"
+                    android:layout_toLeftOf="@+id/imgLevelNext"
+                    android:paddingRight="10dp"
+                    android:lines="1"
+                    android:ellipsize="end" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgLevelNext"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/fake_filter_right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_top_tab_layout_height"
+            android:text="@string/search_string"
+            android:id="@+id/btnSearchCourse"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/seeka_button_background"
+            android:layout_marginTop="@dimen/top_search_button_margin_top"
+            android:textSize="@dimen/top_search_options_text_size"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/destLvlBody" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/editSearchCourses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:floatingSearch_searchHint="@string/search_box_text_hint"
+                app:floatingSearch_hintTextColor="@color/super_light_gray"
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                app:floatingSearch_showSearchKey="false"
+                app:floatingSearch_showMenuAction="false"
+                app:floatingSearch_backgroundColor="@color/white"
+                app:floatingSearch_searchSuggestionTextSize="18sp"
+                app:floatingSearch_leftActionMode="noLeftAction"
+                app:floatingSearch_dividerColor="@color/background_gray"
+                app:floatingSearch_viewTextColor="@color/dark_gray"
+                app:floatingSearch_dimBackground="false"
+                app:floatingSearch_dismissOnOutsideTouch="true"
+                app:floatingSearch_close_search_on_keyboard_dismiss="true">
+
+            </com.arlib.floatingsearchview.FloatingSearchView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_search_suggestion_box_height"
+        android:id="@+id/suggestionsBody"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="@dimen/search_result_margin_legt_right">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_suggestion_title"
+            android:id="@+id/textView4"
+            android:textColor="@color/mid_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

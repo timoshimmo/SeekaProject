@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.arimorty:floatingsearchview-2.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Seekapp/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/2.0.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/Seekapp/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/2.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.arimorty/floatingsearchview/2.0.2/d028f42abf861c9c6eaaaa9e6b0c90d45cf17fd3/floatingsearchview-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

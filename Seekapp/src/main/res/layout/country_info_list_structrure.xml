@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/country_info_scrollview"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/country_info_image_height"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgCountryInfo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/australia_country_image"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/country_intl_stu_info_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/black"
+                    android:alpha="0.6"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/country_intl_stu_info_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/num_intl_stu__layout_padding_left_right"
+                    android:paddingRight="@dimen/num_intl_stu__layout_padding_left_right">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Currently &quot;70054&quot; International Students Study In Australia"
+                        android:id="@+id/txtNumberIntlStudents"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white_color"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/num_intlstudents_text_size"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/course_info_btns_height"
+                    android:layout_marginTop="@dimen/about_ctry_btn_top_bottom_margin"
+                    android:layout_marginBottom="@dimen/about_ctry_btn_top_bottom_margin"
+                    android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+                    android:layout_marginRight="@dimen/search_result_margin_legt_right"
+                    android:id="@+id/btnAboutCountry"
+                    android:background="@drawable/button_corners"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/btn_about_ctry_padding_left"
+                    android:paddingRight="@dimen/btn_about_ctry_padding_right">
+
+                    <ImageView
+                        android:layout_width="@dimen/btn_about_ctry_icon_thumb_width"
+                        android:layout_height="@dimen/btn_about_ctry_icon_thumb_height"
+                        android:id="@+id/imgCountryThumb"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/about_ctry_thumb" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_ctry_text_string"
+                        android:id="@+id/BtnTxtABoutCountry"
+                        android:layout_weight="0.7"
+                        android:textSize="@dimen/num_intlstudents_text_size"
+                        android:textColor="@color/white_color"
+                        android:layout_marginLeft="@dimen/about_ctry_text_margin_left" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgCtryArrowRight"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/white_front_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_divider_height"
+                android:background="@color/mid_gray"
+                android:id="@+id/title_horizontal_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+                android:layout_marginRight="@dimen/search_result_margin_legt_right"
+                android:background="@drawable/curved_row_white_back"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container1"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon1"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/country_info_visa"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow1"
+                            android:background="@android:color/white"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value1"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctry_visa_string"
+                                        android:id="@+id/txtAboutCountryOptions1"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody1"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator1"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider1"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/visa_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visa Details"
+                            android:id="@+id/txtCountryInfoDetails1"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container2"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon2"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/country_info_cost_of_living"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow2"
+                            android:background="@android:color/white"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value2"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cost_living_string"
+                                        android:id="@+id/txtAboutCountryOptions2"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody2"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator2"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider2"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cost_living_value_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cost of living details"
+                            android:id="@+id/txtCountryInfoDetails2"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container3"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon3"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/country_info_climate"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow3"
+                            android:background="@android:color/white"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value3"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctry_climate_string"
+                                        android:id="@+id/txtAboutCountryOptions3"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody3"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator3"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider3"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/climate_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Climate details"
+                            android:id="@+id/txtCountryInfoDetails3"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container4"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon4"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/employment_and_career_development_services_selected"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow4"
+                            android:background="@android:color/white"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value4"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctry_job_prospect"
+                                        android:id="@+id/txtAboutCountryOptions4"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody4"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator4"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider4"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/job_prospect_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Job Prospect / Part Time Jobs Details"
+                            android:id="@+id/txtJobProspectDetails"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container5"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon5"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/country_info_international_health_cover"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow5"
+                            android:background="@android:color/white"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value5"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/intl_health_cover"
+                                        android:id="@+id/txtAboutCountryOptions5"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody5"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator5"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider5"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/international_health_cover_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Job Prospect / Part Time Jobs Details"
+                            android:id="@+id/txtIntlHealthCoverDetails"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container6"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon6"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/ctry_emergency_contact_icon"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow6"
+                            android:background="@android:color/white"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value6"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/safety_emergency"
+                                        android:id="@+id/txtAboutCountryOptions6"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody6"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator6"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider6"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emergency_contact_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Emergency Contact Details"
+                            android:id="@+id/txtEmergencyContactDetails"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size"
+                            android:layout_marginBottom="15dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/EmergencyContactBody">
+
+                            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Emergency Contacts"
+                                android:id="@+id/txtEmergencyContactTitle"
+                                android:textColor="@color/mid_gray"
+                                android:textSize="@dimen/ctry_info_options_text_size"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="15dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView289"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/country_info_ambulance" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:gravity="center_vertical">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="911"
+                                        android:id="@+id/ambulanceContact"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView299"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/country_info_police" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:gravity="center_vertical">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="911"
+                                        android:id="@+id/policeambulanceContact"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView2"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/country_info_fire" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:gravity="center_vertical">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="911"
+                                        android:id="@+id/fireContact"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/profile_data_row_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/ctry_icon_container7"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgCtryOptionIcon7"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/country_info_media"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:id="@+id/infoRow7"
+                            android:background="@android:color/white"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp">
+
+                            <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/country_options_value7"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/media_value_string"
+                                        android:id="@+id/txtAboutCountryOptions7"
+                                        android:textColor="@color/mid_gray"
+                                        android:textSize="@dimen/ctry_info_options_text_size" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/indicatorBody7"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentTop="false">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/filter_year_down_arrow_width"
+                                        android:layout_height="@dimen/filter_year_down_arrow_height"
+                                        android:id="@+id/imgCtryIndicator7"
+                                        android:background="@android:color/transparent"
+                                        android:src="@mipmap/filter_down_arrow"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="@string/country_list_indicator_desc"
+                                        android:scaleType="fitCenter" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background_gray"
+                                    android:id="@+id/hori_divider7"
+                                    android:layout_alignParentBottom="true" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/media_value"
+                        android:background="@color/background_gray"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Media Details"
+                            android:id="@+id/txtMediaDetails"
+                            android:textColor="@color/mid_gray"
+                            android:textSize="@dimen/ctry_info_options_text_size"
+                            android:paddingBottom="5dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/youtube_layout_height"
+                            android:id="@+id/youtube_row"
+                            android:paddingRight="@dimen/num_intl_stu__layout_padding_left_right"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/youtube_thumnail_container"
+                                android:layout_weight="0.45"
+                                android:layout_marginRight="@dimen/num_intl_stu__layout_padding_left_right">
+
+                                <com.google.android.youtube.player.YouTubeThumbnailView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imgYoutubeThumb"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/imgNoVideo"
+                                    android:background="@android:color/transparent"
+                                    android:src="@mipmap/no_video"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="gone" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:id="@+id/ytThumbRelativeLayout"
+                                    android:paddingBottom="15dp">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0:00"
+                                        android:id="@+id/txtYouTubeDuration"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:textSize="@dimen/yt_video_details_text_size"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:background="@android:color/black"
+                                        android:textColor="@color/white_color"
+                                        android:alpha="0.7"
+                                        android:layout_marginRight="5dp" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.52"
+                                android:id="@+id/youtube_details_container"
+                                android:layout_gravity="center_vertical">
+
+                                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Swinburne student project with industry"
+                                    android:id="@+id/txtYouTubeTitle"
+                                    android:textColor="@color/mid_gray"
+                                    android:textSize="@dimen/yt_video_details_text_size"
+                                    android:maxLines="2"
+                                    android:lines="2"
+                                    android:ellipsize="end" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1 month ago"
+                                        android:id="@+id/txtYouTubeLastUploaded"
+                                        android:textColor="@color/light_gray"
+                                        android:layout_marginRight="@dimen/yt_upload_datetime_right_margin"
+                                        android:textSize="13sp" />
+
+                                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="155 views"
+                                        android:id="@+id/txtYouTubeViews"
+                                        android:textColor="@color/light_gray"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.03"
+                                android:layout_gravity="top|right"
+                                android:id="@+id/youtube_option_image_container">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imgYouTubeOptionIcon"
+                                    android:background="@android:color/transparent"
+                                    android:src="@mipmap/yt_option_icon" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

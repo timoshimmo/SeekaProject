@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="edu.freshfutures.seeka.MenusActivityFragment" >
+
+    <android.support.v4.view.ViewPager android:id="@+id/launch_pager" android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        style="@style/CustomCirclePageIndicator"
+        android:padding="@dimen/launch_indicator_padding"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/page_indicator_margin_bottom" />
+
+    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_skip_text"
+        android:id="@+id/btnSkip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/launch_bottom_margin"
+        android:layout_marginTop="@dimen/skip_top_margin"
+        android:textColor="@color/pblue_color"
+        android:textSize="@dimen/skip_text_size" />
+
+</RelativeLayout>
+

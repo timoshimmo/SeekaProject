@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/producea4_layout_height"
+        android:background="@color/white_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_sort_toolbar_height"
+            android:background="@color/background_gray"
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar">
+
+            <ImageButton
+                android:layout_width="@dimen/unlocked_email_cancel_width"
+                android:layout_height="@dimen/unlocked_email_cancel_width"
+                android:id="@+id/imgEmailCancel"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/new_cancel_icon"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_popup_text_values"
+                android:id="@+id/txtPopupTitle"
+                android:textColor="@color/mid_gray"
+                android:textSize="@dimen/unlocked_email_tollbar_title"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_sort_toolbar_height"
+            android:layout_gravity="center_horizontal">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_popup_text"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/email_popup_text_size" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomEditTextLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/popupEmailAdd"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/email_popup_text_size"
+                android:textColor="@color/mid_gray"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/background_gray"
+            android:gravity="center">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sort_button_height"
+                android:text="@string/btn_email_popup_text"
+                android:id="@+id/btnEmailSend"
+                android:background="@drawable/button_corners"
+                android:textSize="@dimen/sort_btn_confirm_text_size"
+                android:layout_marginLeft="@dimen/email_popup_margin_left_right"
+                android:layout_marginRight="@dimen/email_popup_margin_left_right"
+                android:textColor="@color/white_color"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

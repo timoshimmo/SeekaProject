@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.FragmentJobInterships"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white_color"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp">
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/internship_agreement_string"
+            android:id="@+id/textView54"
+            android:textColor="@color/mid_gray"
+            android:textSize="18sp"
+            android:gravity="left" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/popular_job_website"
+                android:id="@+id/btnPopularJobSites"
+                android:background="@drawable/signup_login_button_background"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:textColor="@drawable/login_signup_textcolor"
+                android:textSize="18sp"
+                android:textAllCaps="false"/>
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us_string"
+                android:id="@+id/btnContactUs"
+                android:background="@drawable/signup_login_button_background"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:textColor="@drawable/login_signup_textcolor"
+                android:textSize="18sp"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" tools:context="edu.freshfutures.seeka.NationalityFragment">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/filter_lvl_edu_background"
+        android:paddingBottom="2dp">>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_popup_title_height"
+            android:id="@+id/sponsLayout"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/spons_textlayout"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/settings_popup_margin_left">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nationality_title_string"
+                    android:id="@+id/txtProfPopupTitle"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/settings_title_text_size"
+                    android:layout_marginRight="@dimen/spons_pre_margin_right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lisNationality"
+            android:divider="@color/background_gray"
+            android:dividerHeight="0.8dp"
+            android:choiceMode="singleChoice"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/sponsLayout"
+            android:layout_above="@+id/buttonLayout"
+            android:descendantFocusability="beforeDescendants" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:id="@+id/buttonLayout">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:layout_width="@dimen/settings_popup_button_width"
+                android:layout_height="@dimen/settings_radio_row_height"
+                android:text="Cancel"
+                android:id="@+id/btnCancelNationality"
+                android:background="@drawable/profile_popup_button_background"
+                android:textColor="@color/mid_gray"
+                android:textSize="@dimen/settings_popup_button_text_size"
+                android:textAllCaps="false" />
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                android:layout_width="@dimen/settings_popup_button_width"
+                android:layout_height="@dimen/settings_radio_row_height"
+                android:text="Ok"
+                android:id="@+id/btnAcceptNationality"
+                android:background="@drawable/profile_popup_button_background"
+                android:textColor="@color/pblue_color"
+                android:textSize="@dimen/settings_popup_button_text_size"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

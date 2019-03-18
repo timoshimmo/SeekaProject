@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.freshfutures.seeka.ProfileCareerActivity"
+    android:background="@color/background_gray"
+    android:paddingBottom="@dimen/activity_list_horizontal_margin"
+    android:paddingTop="@dimen/activity_list_horizontal_margin"
+    android:paddingLeft="@dimen/search_result_margin_legt_right"
+    android:paddingRight="@dimen/search_result_margin_legt_right">
+
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableCareers"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/curved_row_white_back"
+        android:paddingTop="@dimen/shaded_padding_bottom"
+        android:paddingBottom="@dimen/shaded_padding_bottom" />
+</RelativeLayout>

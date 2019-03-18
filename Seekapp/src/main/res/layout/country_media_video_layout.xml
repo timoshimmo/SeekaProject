@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/youtube_layout_height"
+        android:id="@+id/youtube_row"
+        android:paddingLeft="@dimen/num_intl_stu__layout_padding_left_right"
+        android:paddingRight="@dimen/num_intl_stu__layout_padding_left_right"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/youtube_thumnail_container"
+            android:layout_weight="0.45"
+            android:layout_marginRight="@dimen/num_intl_stu__layout_padding_left_right">
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgYoutubeThumb"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgNoVideo"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/no_video"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/ytThumbRelativeLayout"
+                android:paddingBottom="15dp">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00"
+                    android:id="@+id/txtYouTubeDuration"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/yt_video_details_text_size"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@android:color/black"
+                    android:textColor="@color/white_color"
+                    android:alpha="0.7"
+                    android:layout_marginRight="5dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:id="@+id/youtube_details_container"
+            android:layout_gravity="center_vertical">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swinburne student project with industry"
+                android:id="@+id/txtYouTubeTitle"
+                android:textColor="@color/mid_gray"
+                android:textSize="@dimen/yt_video_details_text_size"
+                android:maxLines="2"
+                android:lines="2"
+                android:ellipsize="end" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 month ago"
+                    android:id="@+id/txtYouTubeLastUploaded"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginRight="@dimen/yt_upload_datetime_right_margin"
+                    android:textSize="13sp" />
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="155 views"
+                    android:id="@+id/txtYouTubeViews"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"
+            android:layout_gravity="top|right"
+            android:id="@+id/youtube_option_image_container">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgYouTubeOptionIcon"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/yt_option_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

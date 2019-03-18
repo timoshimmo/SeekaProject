@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="launch_text_color">#ffffff</color>
+    <color name="bottom_menu_text_color">#BEC8C8</color>
+    <color name="white_color">#ffffff</color>
+    <color name="pblue_color">#0091f0</color>
+    <color name="seeka_blue">#00aff0</color>
+    <color name="background_gray">#EBF0F0</color>
+    <color name="dark_gray">#3c4141</color>
+    <color name="super_light_gray">#C3C8C8</color>
+    <color name="light_gray">#828282</color>
+    <color name="seeka_launch_red">#f44236</color>
+    <color name="seeka_launch_green">#81c341</color>
+    <color name="light_blue">#E5E8F5</color>
+    <color name="red1">#BE202E</color>
+    <color name="red2">#E62828</color>
+    <color name="mid_gray">#646969</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#F50057</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

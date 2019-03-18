@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="edu.freshfutures.seeka.FilterCoursesActivity"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/seeka_blue"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="0dp"
+        android:minHeight="56dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/search_result_margin_legt_right"
+            android:paddingRight="@dimen/search_result_margin_legt_right">
+
+            <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:id="@+id/txtHomeTitle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/home_bar_top_text_size"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="@dimen/home_bar_button_width"
+                android:layout_height="@dimen/home_bar_settings_button_height"
+                android:id="@+id/btnDialogBack"
+                android:src="@mipmap/home_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_filter_layout"
+        android:paddingLeft="@dimen/search_result_margin_legt_right"
+        android:paddingRight="@dimen/search_result_margin_legt_right"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="60dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/unlocked_row_backgound"
+            android:id="@id/searchLvlContainer"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SearchBoxBody"
+                android:paddingBottom="3dp"
+                android:background="@drawable/filter_lvl_edu_background"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                    android:text="@string/select_level_title_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSelectLevel"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sort_list_structure_text_size"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lisSearchEduLevel"
+                    android:divider="@color/background_gray"
+                    android:dividerHeight="2dp"
+                    android:background="@color/white_color"
+                    android:layout_below="@+id/txtSelectLevel" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- <com.arlib.floatingsearchview.FloatingSearchView
+             android:id="@+id/floating_search_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:floatingSearch_searchHint="What are you looking for?"
+             app:floatingSearch_suggestionsListAnimDuration="250"
+             app:floatingSearch_showSearchKey="false"
+             app:floatingSearch_searchSuggestionTextSize="17sp"
+             app:floatingSearch_leftActionMode="showSearch"
+             app:floatingSearch_viewTextColor="@color/dark_gray"
+             app:floatingSearch_dimBackground="false"
+             app:floatingSearch_dismissOnOutsideTouch="true"
+             app:floatingSearch_close_search_on_keyboard_dismiss="true"
+             style="@style/SearchView"
+             android:layout_below="@+id/topTabLayout"
+             android:layout_marginTop="@dimen/search_result_margin_legt_right"
+             android:layout_marginLeft="@dimen/search_result_margin_legt_right"
+             android:layout_marginRight="@dimen/search_result_margin_legt_right" >
+
+
+         </com.arlib.floatingsearchview.FloatingSearchView>  -->
+
+        <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_top_tab_layout_height"
+            android:text="Save"
+            android:id="@+id/btnSearchLevel"
+            android:background="@drawable/seeka_button_background"
+            android:textSize="@dimen/profile_button_update_text_size"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

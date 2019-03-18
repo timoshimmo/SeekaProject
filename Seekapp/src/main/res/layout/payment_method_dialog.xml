@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_result_curved_body"
+            android:background="@drawable/filter_lvl_edu_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_popup_title_height"
+                android:id="@+id/sponsLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/spons_textlayout"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/settings_popup_margin_left"
+                    android:paddingRight="@dimen/settings_popup_margin_left">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Method "
+                        android:id="@+id/txtSpons"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/settings_title_text_size"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/rdPaymentGroup"
+                    android:divider="@color/background_gray">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paypal_paynet_string"
+                        android:id="@+id/radioPaypal"
+                        android:button="@null"
+                        android:checked="false"
+                        android:textColor="@color/dark_gray"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/check_selector"
+                        android:height="@dimen/profile_data_row_height"
+                        android:paddingLeft="@dimen/settings_popup_margin_left"
+                        android:paddingRight="@dimen/settings_popup_margin_left"
+                        android:textSize="@dimen/profile_details_text_size" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/google_play_payment"
+                        android:id="@+id/radioPlayStore"
+                        android:button="@null"
+                        android:checked="false"
+                        android:textColor="@color/dark_gray"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/check_selector"
+                        android:height="@dimen/profile_data_row_height"
+                        android:paddingLeft="@dimen/settings_popup_margin_left"
+                        android:paddingRight="@dimen/settings_popup_margin_left"
+                        android:textSize="@dimen/profile_details_text_size" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cheque_payment"
+                        android:id="@+id/radioCheque"
+                        android:button="@null"
+                        android:checked="false"
+                        android:textColor="@color/dark_gray"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/check_selector"
+                        android:height="@dimen/profile_data_row_height"
+                        android:paddingLeft="@dimen/settings_popup_margin_left"
+                        android:paddingRight="@dimen/settings_popup_margin_left"
+                        android:textSize="@dimen/settings_radio_options_text_size" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_layout_height"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/rdPaymentGroup"
+                    android:gravity="center_vertical|right">
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                        android:layout_width="@dimen/settings_popup_button_width"
+                        android:layout_height="@dimen/settings_radio_row_height"
+                        android:text="Cancel"
+                        android:id="@+id/btnCancelPayment"
+                        android:background="@drawable/profile_popup_button_background"
+                        android:textColor="@color/mid_gray"
+                        android:textSize="@dimen/settings_popup_button_text_size"
+                        android:textAllCaps="false" />
+
+                    <edu.freshfutures.seeka.CustomWidgets.CustomButtonTextLight
+                        android:layout_width="@dimen/settings_popup_button_width"
+                        android:layout_height="@dimen/settings_radio_row_height"
+                        android:text="Ok"
+                        android:id="@+id/btnAcceptPayment"
+                        android:background="@drawable/profile_popup_button_background"
+                        android:textColor="@color/pblue_color"
+                        android:textSize="@dimen/settings_popup_button_text_size"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

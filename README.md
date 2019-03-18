@@ -1,2 +1,1 @@
-"# SeekaProject" 
-"# SeekaProject" 
+Educational App.
